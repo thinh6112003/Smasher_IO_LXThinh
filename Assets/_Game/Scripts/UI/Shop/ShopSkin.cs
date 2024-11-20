@@ -4,9 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
+using UnityEditor.Rendering;
 
 public class ShopSkin : MonoBehaviour
 {
+    [SerializeField] private GameObject cameraui;
     [SerializeField] private GameObject[] skins;
     [SerializeField] private GameObject skinBase;
     [SerializeField] private SkinShopSO skinShopSO;
@@ -25,6 +28,7 @@ public class ShopSkin : MonoBehaviour
     [SerializeField] private Image imageMonneyOfRandom;
     [SerializeField] private GameObject textEquipt;
     [SerializeField] private GameObject textEquiped;
+    [SerializeField] private TextMeshProUGUI textPrice;
 
     int currentIDSkinSelect=-1;
     int currentIDSkinEquip;
@@ -65,6 +69,11 @@ public class ShopSkin : MonoBehaviour
             ChangeSkinSelectByID(currentIDSkinSelect);
             UpdateButtonRandom();
         }
+        cameraui.SetActive(true);
+    }
+    private void OnDisable()
+    {
+        cameraui.SetActive(false);
     }
     private void Start()
     {
@@ -104,6 +113,7 @@ public class ShopSkin : MonoBehaviour
         dynamicData.SubtractMonney(currentRandomPrice);
         countRandom = 0;
         updateTimer = 0;
+        updateInterval = 0.1f;
         id = -1;
         DynamicActionOnUpdate += Random;
     }
@@ -213,14 +223,19 @@ public class ShopSkin : MonoBehaviour
     Action DynamicActionOnUpdate;
     int id;
     int countRandom;
-    int countMaxRandom = 12;
+    int countMaxRandom = 15;
+    int idterm;
     public void Random()
     {
         updateTimer += Time.deltaTime;
         if (updateTimer >= updateInterval)
         {
-            if(id!=-1)listSkinsCurrent[currentIDSkinLocked[id]].UnsetTermSelect();
-            id = UnityEngine.Random.Range(0, currentIDSkinLocked.Count);
+            updateInterval += 0.0065f*countRandom;
+            if (id!=-1)listSkinsCurrent[currentIDSkinLocked[id]].UnsetTermSelect();
+
+            do idterm = UnityEngine.Random.Range(0, currentIDSkinLocked.Count);
+            while (idterm == id);
+            id = idterm;
             if(countRandom == countMaxRandom|| currentIDSkinLocked.Count ==1)
             {
                 UIManager.Instance._eventSystem.SetActive(true);

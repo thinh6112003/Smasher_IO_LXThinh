@@ -24,28 +24,28 @@ public class ShopWeapon : MonoBehaviour
     private List<WeaponShopUnit> weaponShopUnits = new List<WeaponShopUnit>();
     private void Start()
     {
-        for (int i = 0; i < weaponShopSO.weaponShopItems.Count; i++)
-        {
-            WeaponShopItem newSkinShopItem = weaponShopSO.weaponShopItems[i];
-            switch (newSkinShopItem.type)
-            {
-                case Type.RARE:
-                    AddItemShop(rareContentRectTf, raceContentTf, ref countRaRe, i);
-                    break;
-                case Type.EPIC:
-                    AddItemShop(epicContentRectTf, epicContentTf, ref countEpic, i);
-                    break;
-                case Type.COMMON:
-                    AddItemShop(commonContentRectTf, commonContentTf, ref countCommon, i);
-                    break;
-            }
-        }
-        currentIDWeapon = DataManager.Instance.dynamicData.GetIdSkin();
-        ChangeSkinByID(currentIDWeapon);
-        weaponShopUnits[currentIDWeapon].SetEquiped();
-        buttonCommon.onClick.AddListener(OnclickButtonCommon);
-        buttonEpic.onClick.AddListener(OnclickButtonEpic);
-        buttonRare.onClick.AddListener(OnclickButtonRare);
+        //for (int i = 0; i < weaponShopSO.weaponShopItems.Count; i++)
+        //{
+        //    WeaponShopItem newSkinShopItem = weaponShopSO.weaponShopItems[i];
+        //    switch (newSkinShopItem.type)
+        //    {
+        //        case Type.RARE:
+        //            AddItemShop(rareContentRectTf, raceContentTf, ref countRaRe, i);
+        //            break;
+        //        case Type.EPIC:
+        //            AddItemShop(epicContentRectTf, epicContentTf, ref countEpic, i);
+        //            break;
+        //        case Type.COMMON:
+        //            AddItemShop(commonContentRectTf, commonContentTf, ref countCommon, i);
+        //            break;
+        //    }
+        //}
+        //currentIDWeapon = DataManager.Instance.dynamicData.GetIdSkin();
+        //ChangeSkinByID(currentIDWeapon);
+        //weaponShopUnits[currentIDWeapon].SetEquiped();
+        //buttonCommon.onClick.AddListener(OnclickButtonCommon);
+        //buttonEpic.onClick.AddListener(OnclickButtonEpic);
+        //buttonRare.onClick.AddListener(OnclickButtonRare);
     }
 
     private void OnclickButtonRare()

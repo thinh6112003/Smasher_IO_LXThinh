@@ -15,7 +15,7 @@ public class DynamicData
     public DynamicData()
     {
         currentIDLevel = 1;
-        currentMonney = 100;
+        currentMonney = 10000;
         idSkin = 0;
         idWeapon = 0;
         soundStatus = true;

@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -41,6 +42,7 @@ public class SkinShopUnit : MonoBehaviour
     }
     public void SetTermSelect()
     {
+        ScaleEffect(1.08f, 0.075f);
         termSelectIcon.SetActive(true);
     }
     public void UnsetTermSelect()
@@ -50,6 +52,7 @@ public class SkinShopUnit : MonoBehaviour
     public void SetSelect()
     {
         equipIcon.SetActive(true);
+        ScaleEffect(1.35f, 0.15f);
     }
     public void SetDeSelect()
     {
@@ -60,6 +63,16 @@ public class SkinShopUnit : MonoBehaviour
         isOpen = true;
         DataManager.Instance.shopData.SetOpenSkin(id);
         iconImage.sprite = skinShopItem.spriteOpen;
+        ScaleEffect(1.6f, 0.25f);
+    }
+    public void ScaleEffect(float scale, float time)
+    {
+        transform.DOScale(Vector3.one * scale, time)
+            .SetEase(Ease.Linear)
+            .OnComplete(() =>
+            {
+                transform.DOScale(Vector3.one, time);
+            });
     }
     public int GetID()
     {
