@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfe7990846aa5d0502ee328687c84da5, type: 3}
+  m_Name: 1_Rare_ColorSet
+  m_EditorClassIdentifier:
+  TabBackgroundColor: {r: 0.3137255, g: 0.3019608, b: 0.9607844, a: 1}
+  TabTextColor: {r: 1, g: 1, b: 1, a: 1}
+  ItemBackgroundColor: {r: 0.75294125, g: 0.7490196, b: 1, a: 1}
+  ItemSelectSquareColor: {r: 0.3137255, g: 0.3019608, b: 0.9607844, a: 1}
+  ItemSelectSquareNotOwnedColor: {r: 0.61071426, g: 0.608, b: 0.76, a: 1}
+  ItemNotOwnedColor: {r: 0.75294125, g: 0.7490196, b: 1, a: 0.34901962}
+  ItemLockedColor: {r: 0.37647063, g: 0.34509805, b: 0.7411765, a: 1}

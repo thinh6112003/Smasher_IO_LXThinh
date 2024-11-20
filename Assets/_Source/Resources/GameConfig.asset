@@ -1,0 +1,477 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcc107f85e5e9184e0f8d0294ef98263, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier:
+  IsIOSATT: 1
+  ATTPrivacyPolicy: https://privacy.azurgames.com
+  MAXControlsLocalizations: 0
+  AdsMediation:
+    dummyText:
+    m_UseDummyAdsOnDevice: 0
+  ResolutionsData:
+    m_ResolutionDatas:
+    - Name: "Apple iPhone 5, 5S, 5C, SE\t"
+      Width: 640
+      Height: 1136
+      DPI: 326
+    - Name: Apple iPhone 6, 6S, 7
+      Width: 750
+      Height: 1334
+      DPI: 326
+    - Name: Apple iPhone 6 Plus, 6S Plus, 7 Plus
+      Width: 1080
+      Height: 1920
+      DPI: 401
+    - Name: Apple iPhone X, XS
+      Width: 1125
+      Height: 2436
+      DPI: 463
+    - Name: Apple iPhone XR
+      Width: 828
+      Height: 1792
+      DPI: 324
+    - Name: Apple iPhone XS Max
+      Width: 1242
+      Height: 2688
+      DPI: 456
+    - Name: "Apple iPad 1, 2\t"
+      Width: 1024
+      Height: 768
+      DPI: 132
+    - Name: Apple iPad 3, 4
+      Width: 2048
+      Height: 1536
+      DPI: 264
+    - Name: Apple iPad Air 1, 2
+      Width: 2048
+      Height: 1536
+      DPI: 264
+    - Name: Apple iPad mini
+      Width: 1024
+      Height: 768
+      DPI: 162
+    - Name: Apple iPad mini Retina
+      Width: 2048
+      Height: 1536
+      DPI: 324
+    - Name: Apple iPad Pro (1) 9.7
+      Width: 2224
+      Height: 1668
+      DPI: 265
+    - Name: Apple iPad Pro (2) 10.5
+      Width: 2224
+      Height: 1668
+      DPI: 265
+    - Name: Apple iPad Pro (3) 11
+      Width: 2388
+      Height: 1668
+      DPI: 265
+    - Name: Apple iPad Pro (1-3) 12.9
+      Width: 2732
+      Height: 2048
+      DPI: 265
+    - Name: Samsung Galaxy S8
+      Width: 2960
+      Height: 1440
+      DPI: 568
+    - Name: iPhone 6 Plus/6S Without downsampling
+      Width: 1242
+      Height: 2208
+      DPI: 461
+    IsDebugEnabled: 1
+  Characters:
+    CharacterBase:
+      ScaleAnimation:
+        Delay: 0.3
+        ScaleArray:
+          m_Steps:
+          - Scale: {x: 1.1, y: 1.1, z: 1.1}
+            Time: 0.2
+            Ease: 3
+            Delay: 0
+          - Scale: {x: 0.95, y: 0.95, z: 0.95}
+            Time: 0.1
+            Ease: 4
+            Delay: 0
+          - Scale: {x: 1, y: 1, z: 1}
+            Time: 0.1
+            Ease: 2
+            Delay: 0
+        TimeToBlink: 0.05
+        TimeToNormal: 0.25
+      m_ScalePlayer:
+        m_Scales:
+        - 1
+        - 1.4
+        - 1.8
+        m_NextAddScales: 0.3
+        m_ScaleMax: 5
+      m_ScaleEnemy:
+        m_Scales:
+        - 1
+        - 1.4
+        - 1.8
+        m_NextAddScales: 0.3
+        m_ScaleMax: 5
+      m_VelocityScaleData:
+      - Scale: 1
+        VelocityKof: 1
+      - Scale: 5
+        VelocityKof: 3
+    CharacterPlayer:
+      LevelWin:
+        Delay: 0.35
+        Time: 0.65
+      RotationVelocity: 500
+      Velocity: 3
+      RotationAngleAffectSpeed: 1
+      RotationSpeedXAngle: 15
+    CharacterEnemy:
+      Velocity: 2
+      RotationVelocity: 500
+      m_Skins:
+      - hero skin 01
+      - hero skin 02
+      - hero skin 03
+      - hero skin 04
+      - hero skin 05
+      - hero skin 06
+      - hero skin 07
+      - hero skin 08
+      - hero skin 09
+      - hero skin 10
+      - hero skin 11
+      - hero skin 12
+      - hero skin 13
+      - hero skin 14
+      - Boss_skin 02
+      - Boss_skin 03
+      - Boss_skin 04
+      - Boss_skin 05
+      - Boss_skin_01
+    EnemyBonus:
+      Velocity: 1.5
+      VelocityRotationLerp: 400
+  Settings:
+    BigPlayerButton:
+      AddScale: 2
+      ShowOnlyRVLoaded: 0
+    Haptic:
+      m_HapticDatas:
+      - IsWork: 1
+        Event: 0
+        HapticType: 4
+        Priority: 1
+      - IsWork: 1
+        Event: 1
+        HapticType: 6
+        Priority: 3
+      - IsWork: 1
+        Event: 2
+        HapticType: 4
+        Priority: 0
+      - IsWork: 1
+        Event: 3
+        HapticType: 5
+        Priority: 0
+      - IsWork: 1
+        Event: 4
+        HapticType: 4
+        Priority: 0
+    ClaimAnimationV4:
+      SpawnCount: 6
+      ScaleStart: 0.85
+      TimeScaleStart: 0.1
+      EaseScaleStart: 3
+      MoveUp: 250
+      MoveUpTime: 0.2
+      EaseMoveUp: 3
+      ScaleMin: 0.5
+      TimeScaleMin: 0.2
+      EaseScaleMin: 3
+      DelaySpawn: 0.095
+      VelocityToEarn: 2000
+      DelayAfterEarn: 0.3
+    Revive:
+      ReviveType: 0
+      Time: 5
+      TimeToShowButtons: 1
+      ReviveCost: 250
+    LevelRewardData:
+      SimpleReward: 50
+      RewadX: 3
+      DelayToShowNoThanks: 1
+    GroundSizeByEnemyCount:
+    - Value: 15
+      Target: 4
+    - Value: 40
+      Target: 20
+    Theme:
+      m_LevelSteps: 0300000004000000
+      m_NextSteps: 5
+    Shop:
+      TryOnce:
+        Type: 0
+        Cost: 0
+    SlotMachine:
+      TypeStop: 0
+      StopSlow:
+        DelayStopSpin01: 0.25
+        DelayStopSpin02: 0.35
+        DelayStopSpin03: 0.3
+        DelayAfterSpin: 0.15
+        TimeStop: 0.8
+        SpeedStop: 0.25
+      StopHard:
+        DelayStopSpin01: 0.4
+        DelayStopSpin02: 0.45
+        DelayStopSpin03: 0.475
+        DelayAfterSpin: 0.25
+        TimeStop: 0.25
+      m_CoinCount:
+        Min: 300
+        Max: 600
+      DelayNoThanks: -1.5
+      Speed01: 2
+      Speed02: 2.5
+      Speed03: 2.75
+      Cooldown: 300
+      UseTestValue: 0
+      WinChanceTest:
+        Chance:
+          Chance: 1.01
+        CoinChance: 0
+        WeaponChance: 10
+        SkinChance: 0
+      WinChance:
+        Chance:
+          Chance: 0.375
+        CoinChance: 8
+        WeaponChance: 1
+        SkinChance: 1
+      OneMore:
+        Type: 0
+        Coins: 0
+        MultipleCoins: 3
+        TimeCoins: 0
+        TimeRV: 5
+    Prefabs:
+      Skin: {fileID: 114231407758594190, guid: 916262a08ff167843b4ec08fcc90105c, type: 2}
+  Debug:
+    m_DebugMode: 0
+    m_GodMode: 0
+    m_EmulateLowFPS: 0
+    LowFPSValues: {x: 5, y: 15}
+    IphoneXDiagramPrefab: {fileID: 1313407211204484, guid: 3d4dd8a320ec5dd4d876395ffec53d8b, type: 2}
+    m_ShowFPSCounter: 0
+    FPSCounterPrefab: {fileID: 1053634370135525, guid: 6956603d94b37d041a94f96269a067de, type: 2}
+    m_ShowGameLoopButtons: 0
+    GameLoopButtonsPrefab: {fileID: 1770541143778660, guid: cfa1953bd2c2f704ca1f2e4360f125d2, type: 2}
+    m_ShowMediationTester: 0
+    MediationTesterPrefab: {fileID: 1266629046932229, guid: ff051b34497e0b348a7835e9dbb9766a, type: 2}
+  Input:
+    DragSensitivity: {x: 1, y: 1}
+    IsUseJoystick: 0
+    Joystick:
+      IsShowVisuals: 0
+      IsStatic: 0
+      IsResetDirection: 0
+      Radius: 120
+      HandleRadiusMultiplier: 0.25
+    IsAutoAttack: 0
+    IsAutoAttackDecor: 1
+    Sensitivity: 0.001
+    PowerRadius: 120
+    IsStatic: 1
+    ShowInputJoystick: 1
+    Graphics:
+      RaidusIndicator: 80
+      TransparencyIndicator: 0.35
+      TransparencyStroke: 0.15
+      Color: {r: 0, g: 0, b: 0, a: 1}
+  GamePlay:
+    BonusLevel:
+      PlaySound: 0
+      m_EnemyCount:
+        Min: 135
+        Max: 135
+      GroundRadius: 35
+      PlayerScale: 5
+      SetFixedDeltaTime: 1
+      FixedDeltaTime: 0.04
+      m_SkinNames:
+      - AmoungUSMesh
+      - HeroB01
+      - HeroA003
+  Levels:
+    BonusLevel:
+      m_BonusLevels: 04000000070000000c0000001000000014000000180000001c000000
+      m_BonusLevelsPeriodAfter: 4
+    m_EnemyCount: 040000000a0000000f000000
+    m_NextLevels:
+      Min: 16
+      Max: 20
+    m_ThemesLevelChange: 4
+    m_Themes:
+    - ThemePreview: {fileID: 21300000, guid: c2b70f724a475ae40a9dbd15a2e75e9c, type: 2}
+      GroundColorA: {r: 0.54509807, g: 0.9803922, b: 0.47450984, a: 1}
+      GroundColorB: {r: 0.42352945, g: 0.75294125, b: 0.36862746, a: 1}
+      StickManColor: {r: 1, g: 0.73333335, b: 0.023529412, a: 1}
+      ThemeDecorItems:
+      - {fileID: 114536027926439243, guid: 008d5aa544c5420479a470939c49cdab, type: 2}
+      - {fileID: 114935514348658762, guid: 4182691d3685d714d9eb1a8e9ff82c43, type: 2}
+      - {fileID: 114216738071888968, guid: 7c0f2ac9513708d4e963cbaaf7b27d63, type: 2}
+      - {fileID: 114800055997491331, guid: e4ed54c3a7d78794896200ec8cfb3a96, type: 2}
+      - {fileID: 114967281366066640, guid: 9fafea1342d58b6448c77fc245957e4b, type: 2}
+    - ThemePreview: {fileID: 21300000, guid: 9f2b9b4a4e189fe42a80950c39019846, type: 2}
+      GroundColorA: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
+      GroundColorB: {r: 0.660953, g: 0.660953, b: 0.809, a: 1}
+      StickManColor: {r: 1, g: 0.73333335, b: 0.023529412, a: 1}
+      ThemeDecorItems:
+      - {fileID: 114108537670370586, guid: 9da217990642bfd4aa0901740f6ea695, type: 2}
+      - {fileID: 114390724608325384, guid: 9647d8799e2c32948a3127f380f0b736, type: 2}
+      - {fileID: 114543512807134664, guid: 57f938b4c8ff6b544b331aca8234bf45, type: 2}
+      - {fileID: 114805651748970775, guid: 236e04d9141e1704182b187be1bd7c72, type: 2}
+      - {fileID: 114935514348658762, guid: 4182691d3685d714d9eb1a8e9ff82c43, type: 2}
+    - ThemePreview: {fileID: 21300000, guid: f1f7ba04ae0ed27499c6ce241136f5cf, type: 2}
+      GroundColorA: {r: 0.8, g: 0.7058824, b: 0.24470587, a: 1}
+      GroundColorB: {r: 0.8, g: 0.64000005, b: 0.13490196, a: 1}
+      StickManColor: {r: 1, g: 0.73333335, b: 0.023529412, a: 1}
+      ThemeDecorItems:
+      - {fileID: 114935514348658762, guid: 4182691d3685d714d9eb1a8e9ff82c43, type: 2}
+      - {fileID: 114284414830025823, guid: 7743ac94508f4ee4eb8e1341a353b87d, type: 2}
+      - {fileID: 114534610502136354, guid: 06141d7c747fd9e4eba40d57eadb6537, type: 2}
+    - ThemePreview: {fileID: 21300000, guid: 5403b8e3ea622814883e50de7688823f, type: 2}
+      GroundColorA: {r: 0.30745098, g: 0.5239216, b: 0.8, a: 1}
+      GroundColorB: {r: 0.3591304, g: 0.35304347, b: 0.7, a: 1}
+      StickManColor: {r: 1, g: 0.73333335, b: 0.023529412, a: 1}
+      ThemeDecorItems:
+      - {fileID: 114093066893122936, guid: aaf537f3320632045a7551a6ec41b210, type: 2}
+      - {fileID: 114380120406648927, guid: d0abd4b42884d144caa1ffb185340c22, type: 2}
+      - {fileID: 114028147470620157, guid: 49aae764e6d4c2b4ea782d27d95a3903, type: 2}
+      - {fileID: 114857959000755432, guid: 1953f5e2feaadf844b15ebfccf90d87b, type: 2}
+      - {fileID: 114935514348658762, guid: 4182691d3685d714d9eb1a8e9ff82c43, type: 2}
+    - ThemePreview: {fileID: 21300000, guid: 10d5282123e57b9458573ac5a7ade8bb, type: 2}
+      GroundColorA: {r: 1, g: 0.6509804, b: 0.48235297, a: 1}
+      GroundColorB: {r: 1, g: 0.49411768, b: 0.454902, a: 1}
+      StickManColor: {r: 1, g: 0.73333335, b: 0.023529412, a: 1}
+      ThemeDecorItems:
+      - {fileID: 114935514348658762, guid: 4182691d3685d714d9eb1a8e9ff82c43, type: 2}
+      - {fileID: 114146011331991385, guid: aef59652f3b380145992fe54f4c5f1c5, type: 2}
+      - {fileID: 114480963767483383, guid: 3ef6f9a459c2b2d408c5a0d9285f31b6, type: 2}
+      - {fileID: 114157134969171769, guid: c3e838dde44f5b14ba7a9fced44e8db5, type: 2}
+      - {fileID: 114626892948265607, guid: 9d8c3f0634a68c14598a8250d608e6b9, type: 2}
+      - {fileID: 114032849815897892, guid: 9ae3e62122b5e5c428882e84575b2541, type: 2}
+      - {fileID: 114967281366066640, guid: 9fafea1342d58b6448c77fc245957e4b, type: 2}
+  HUD:
+    IsUseCollectables: 0
+    EarnObject:
+      EarnObjectUIAnimData:
+        keyData:
+        valueData: []
+      IsPlayHapticsOnReceive: 1
+      ReceivedHaptics: 0
+      EarningCompleteHaptics: 5
+      HapticsCooldown: 0.3
+    CollectableData:
+      keyData:
+      valueData: []
+    AnimationData: {fileID: 0}
+  Player: {}
+  Menus:
+    UseScreenSettings: 0
+    OpenLevelFailedScreenAfterReviveScreen: 0
+    TimeToShowNoThanks: 2
+    ShowNoThanksDuration: 1
+    ShowNoThanksEase: 7
+    RV_NeedleRotationDuration: 1.3
+    RV_NeedleRotationEase: 2
+    RV_ButtonBlockDuration: 3
+    ExtendedButtonCanDoScaleAnim: 0
+    ExtendedButtonCanDoHaptics: 0
+    ExtendedButtonScaleAnimType: 1
+    ExtendedButtonPunchScale: 0.2
+    ExtendedButtonPunchScaleDuration: 0.25
+    ExtendedButtonPunchScaleVibrato: 7
+    ExtendedButtonPunchScaleElasticity: 0.66
+    ExtendedButtonPunchScaleEaseIn: 27
+    ExtendedButtonPunchScaleEaseOut: 9
+    TimeToAllowRevive: 10
+    GDPR:
+      IsGDPRRequired: 1
+      PrivacyPolicyURL: https://privacy.azurgames.com
+      TermsOfServiceURL: https://privacy.azurgames.com
+      Text:
+        TitleText: We've updated our Terms
+        TermsOfServiceLinkText: Terms of Service
+        PrivacyPolicyLinkText: Privacy Policy
+        AgreeConditionText: By tapping "Accept" you agree to them
+        AcceptButtonText: Accept
+    ScreenFadeInDuration: 0.25
+    ScreenFadeOutDuration: 0.15
+  Camera:
+    ZoomType: 0
+    ZoomDolly:
+      Sensitivity: 1
+      Limits: {x: -5, y: 5}
+    ZoomOrtho:
+      Sensitivity: 1
+      Limits: {x: 2, y: 5}
+    ZoomPerspective:
+      Sensitivity: 20
+      Limits: {x: 25, y: 90}
+    ShakesData:
+      m_Shakes:
+      - IsWork: 1
+        EventType: 0
+        ShakeTime: 0.1
+        ShakeAmount: 0.15
+        Priority: 1
+    Welcome:
+      m_TransformDatas:
+      - RotatorRotation: {x: 14.070001, y: 182.5, z: 0}
+        HandPosition: {x: 0, y: 0.97, z: -4.71}
+        Name:
+      m_CameraIndex: 0
+    Game:
+      TransformArray:
+        m_TransformDatas:
+        - RotatorRotation: {x: 45, y: 179.99997, z: 1.1514836E-12}
+          HandPosition: {x: 0, y: 0, z: -13}
+          Name:
+        m_CameraIndex: 0
+      Time: 0.9
+      Ease: 3
+      Delay: 0
+    LevelWin:
+      TransformArray:
+        m_TransformDatas:
+        - RotatorRotation: {x: 24.939993, y: 180.00002, z: 0}
+          HandPosition: {x: 0, y: 0.39, z: -5.01}
+          Name:
+        m_CameraIndex: 0
+      Time: 0.5
+      Ease: 3
+      Delay: 0.3
+  Tweens: {}
+  FadeData:
+    Time: 0.1
+    Alpha: 1
+    Color: {r: 1, g: 1, b: 1, a: 1}
+  MaterialRefrences:
+    GroundMat_A: {fileID: 2100000, guid: 86a4c40c93c5f714f9c147b37593399c, type: 2}
+    GroundMat_B: {fileID: 2100000, guid: 9d6d2f49693bd234cb4411f93bac41c1, type: 2}
+    SmashMaterial: {fileID: 2100000, guid: 9ae8c03ec6eb95045a9caf8ccc88fe1e, type: 2}
+    StickManMaterial: {fileID: 2100000, guid: 9bfdc7ae3e37e3c47ab60d43fa7589c2, type: 2}
+  Shop:
+    Data: {fileID: 11400000, guid: 95c5eac8b67518b41969e9093726d158, type: 2}

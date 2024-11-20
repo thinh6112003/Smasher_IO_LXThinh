@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab8369efa7e288cc792325cc1d459415, type: 3}
+  m_Name: GameSettings
+  m_EditorClassIdentifier:
+  General:
+    IsInit: 1
+    IsAdsEnabled: 1
+    Icon: {fileID: 21300000, guid: 47e54d4195584154384d714e16d825d5, type: 2}
+    SplashImage: {fileID: 21300000, guid: fe753b12f1b359f4b8950f04de99417e, type: 2}
+    UpdateSplash: 1
+    IOSTeamIDTest: 0
+    AutoSign: 1
+    SignIOSTeamID: XCVXFM7SV3
+    SeparateBundles: 1
+    BundleIdentifier: com.kobgames.smashersio
+    BundleIdentifierAndroid: com.games.smashersio
+    GameName: Smashers .io
+    BuildVersion: 4.5
+    BuildNumber: 4501
+    AppsFlyerId: r9vNC83N8nYpCzYGigyjUh
+    AdjustId:
+    AppMetricaId: 9b34f89e-365c-40f2-a4ed-5a5fb3857f70
+    FacebookAppId: 353933045611776
+    FacebookAppIdNotes:
+    GooglePlayId: com.games.smashersio
+    AppStoreId: 1527886948
+    EnforceQualitySettings: 1
+    IsBuildIOS: 0
+    IsBuildAndroid: 0
+    IsFacebookAppIdSave: 1
+    UpdateFacebookManifest: 0
+    SetSpecificCulture: 1
+    CultureName: en-US
+  Screenshots: {}
+  AdsMediation:
+    MediationNetworks: 2
+    PPNetworks: 0
+    IronSourceAppleID: 93a3c8b5
+    IronSourceAndroidID: 93a38f2d
+    MAXSDKKey: 6AQkyPv9b4u7yTtMH9PT40gXg00uJOTsmBOf7hDxa_-FnNZvt_qTLnJAiKeb5-2_T8GsI_dGQKKKrtwZTlCzAR
+    AdMobAppIdAndroid: ca-app-pub-5108357189760220~3583850817
+    AdMobAppIdIos: ca-app-pub-5108357189760220~8339761155
+    MAXBannerAdUnitIdIOS: e8ac3dd0bbb56e98
+    MAXInterstitialAdUnitIdIOS: 460b652915f2bf67
+    MAXRewardVideoAdUnitIdIOS: 343d53a15e90c248
+    MAXBannerAdUnitIdAndroid: 5f625b67f8169d0f
+    MAXInterstitialAdUnitIdAndroid: e5ec2c72a97f866a
+    MAXRewardVideoAdUnitIdAndroid: d1278fb1e10b135d
+  RemoteSettings: {}
+  Analytics:
+    SubmitFPS: 1
+    GameAnalyticsCustomDimensions01:
+    - ConfigVersion_0.1
+    - ConfigVersion_0.2
+    - ConfigVersion_0.3
+    - ConfigVersion_0.3.1
+    - ConfigVersion_0.3.2
+    - ConfigVersion_0.3.3
+    GameAnalyticsCustomDimensions02:
+    - LevelComplete_1
+    - LevelComplete_2
+    - LevelComplete_3
+    - LevelComplete_4
+    - LevelComplete_5
+    - LevelComplete_10
+    GameAnalyticsCustomDimensions03: []
+  RateUs:
+    RateUsLevels: 02000000060000000f000000
+    RateUsPopupMode: 2
+  Shortcuts:
+    EditMode: 0
+    ShortcutsGroup: []
+  Sync: {}
+  VersionsDiff:
+    VersionsSDK:
+      VersionsList:
+        Versions:
+        - Name: IronSource
+          Version: 7.0.4.1-r
+        - Name: MaxSdk
+          Version: 3.1.18
+        - Name: AppsFlyer
+          Version: 5.3.0
+        - Name: GameAnalytics
+          Version: 6.3.10
+        - Name: AppMetrica
+          Version: 3.5.0
+        - Name: Facebook
+          Version: 8.1.1
+        - Name: Fx
+          Version: v0.0.8
+        - Name: SimpleSDK
+          Version: v0.2.2
+        - Name: SimpleSDKAttribution
+          Version: v0.0.4-appsflyer
+        - Name: SimpleSDKTopon
+          Version: global-v5.7.3
+    VersionsProject:
+      VersionsList:
+        Versions:
+        - Name: IronSource
+          Version: 7.0.4.1-r
+        - Name: MaxSdk
+          Version: 3.1.18
+        - Name: AppsFlyer
+          Version: 5.3.0
+        - Name: GameAnalytics
+          Version: 6.3.10
+        - Name: AppMetrica
+          Version: 3.5.0
+        - Name: Facebook
+          Version: 8.1.1
+        - Name: Fx
+          Version: v0.0.8
+        - Name: SimpleSDK
+          Version: v0.2.2
+        - Name: SimpleSDKAttribution
+          Version: v0.0.4-appsflyer
+        - Name: SimpleSDKTopon
+          Version: global-v5.7.3

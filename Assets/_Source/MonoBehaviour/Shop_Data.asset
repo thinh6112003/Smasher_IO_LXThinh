@@ -1,0 +1,743 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fadb0aeff63eee9ff3034dcc895736e, type: 3}
+  m_Name: Shop_Data
+  m_EditorClassIdentifier:
+  ShopItems:
+    SkinList:
+    - Index: 0
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: c8cb1fec7dd6bce48b4581de188ac710, type: 2}
+      ItemType: 0
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: f4671805575d54a4da820c1c2d422949, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 5bd481abdb4a83c469887739b63f16ef, type: 2}
+    - Index: 1
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 472e8ab06fe856048afa35b0dd2ccf01, type: 2}
+      ItemType: 0
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: f37cd8cbed2aa794abe46ced84e87bcb, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: e4ea01cc1c071d346baa3e9a818d795a, type: 2}
+    - Index: 2
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 3ac8cae7a1034d2478123fb4d469f21a, type: 2}
+      ItemType: 0
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 86906cd8aa4112245a3b7f1a2235d6aa, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: e5f5e7ce51a4d6641a0ae89a34bfea9d, type: 2}
+    - Index: 3
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: a27f6b33021ef014f9c031c4e6634a86, type: 2}
+      ItemType: 0
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 6dd32818e598a114e859c0fe3bbee9cb, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: b8c4bce81eaa5c54bb281218a46fa5de, type: 2}
+    - Index: 4
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 05bd2af9b2a0ee142a54b26ab7dd9df5, type: 2}
+      ItemType: 0
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: b2862fa52ac59b74e99bedd11b9b6ab5, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 3edfb2efd68168a428543a2c28f3dd1b, type: 2}
+    - Index: 5
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: c1d5be8dc6d25bd45a3757fb7f90e752, type: 2}
+      ItemType: 0
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 0812c4c302b5e214bbb86e13f029ede7, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 868623865fece2843aa60050b657e610, type: 2}
+    - Index: 6
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 9bddc00ace498104eb42d18b4a5ea6ea, type: 2}
+      ItemType: 0
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: f3aff4908350e3548acdbf1d5428d0e1, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 5ec27142966e4a14d9961cce1472f7ce, type: 2}
+    - Index: 7
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: c8a39c236b156f042827891284bfc4e2, type: 2}
+      ItemType: 0
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 40c286f4d4ae1ef4b98112717593dad6, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: a0d52d742e33dd049975c2ba7820f0a4, type: 2}
+    - Index: 8
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 6c26a254385953547b24bac4dc06da72, type: 2}
+      ItemType: 0
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 277093d72086b0c44a54dbefac47dd76, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: d52681d06f097fb4f8ebcc9d3f93dcda, type: 2}
+    - Index: 9
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: f9456e7c0feab8748bb730bda5af1c1b, type: 2}
+      ItemType: 0
+      ItemRarity: 1
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: e8f57aacd920f0c4d9dce8ffdb22c7f7, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 487824dad94accf47b6e5ee116423f08, type: 2}
+    - Index: 16
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 28bf17a923bfaca48996eb221aabad0b, type: 2}
+      ItemType: 0
+      ItemRarity: 1
+      UnlockMethod: 0
+      RequiredAdsToWatch: 2
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: ba60e80cd89473041b74e0d50d64ceaf, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: c144e4676b7ff624ba6e4c3249e75b8a, type: 2}
+    - Index: 11
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: b5a36a76f03e16e499a05848938ac3c0, type: 2}
+      ItemType: 0
+      ItemRarity: 1
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 117c1df0220a8c849bef9362608d5df8, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 1b0f55ce1775efb4dbbe250f2ddbb221, type: 2}
+    - Index: 12
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: af290bd461b08ec4c9389e0dfcd0c8ae, type: 2}
+      ItemType: 0
+      ItemRarity: 1
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 1c5991021a1f5854b9c8616b4a8148fd, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 50867698b6ae50744a4eba5bdb1db9a3, type: 2}
+    - Index: 13
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: c5a7d864a2f955d4b87cd988c341db13, type: 2}
+      ItemType: 0
+      ItemRarity: 1
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: d1c258c36746ed442a3ceb2b29e7682b, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: aaef89cadd1035f458182a73be4ef747, type: 2}
+    - Index: 14
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 8613e5de6cba1c448934a245554f8212, type: 2}
+      ItemType: 0
+      ItemRarity: 1
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 222cbe41581053b4aa264288177b39ad, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 1f67a3563045291469e094613fbeefa7, type: 2}
+    - Index: 15
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 83d5fbbe9ed21c24abf04fd231631444, type: 2}
+      ItemType: 0
+      ItemRarity: 1
+      UnlockMethod: 0
+      RequiredAdsToWatch: 2
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 7ba96581290791f42ba4266b1fa36987, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 77a7674eebfb8b94e83c9f9ece8c3129, type: 2}
+    - Index: 10
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 6535453900097df488324fdc03c0eb1f, type: 2}
+      ItemType: 0
+      ItemRarity: 1
+      UnlockMethod: 1
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 6
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: f500cd6e8ebc6f7489121a5088632b16, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 546647c00fb81394d921b927db4767b1, type: 2}
+    - Index: 17
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 60eb9fa02f7f9254b95239d53705e480, type: 2}
+      ItemType: 0
+      ItemRarity: 1
+      UnlockMethod: 1
+      RequiredAdsToWatch: 2
+      RequiredMoney: 0
+      RequiredLevel: 14
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: ee7288c050353504a9e1f8f50c15f6d0, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 12b40e1ae1558764dace6f32ab5e4342, type: 2}
+    - Index: 18
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 373e3980729f38f4cb0e5c12752c704e, type: 2}
+      ItemType: 0
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 1
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 0a911732335fea0489c8a43eaca5e626, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 82eaafeba84938a4e8bcc0b5a04778ec, type: 2}
+    - Index: 25
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: f050405b57662974495b9622c3236626, type: 2}
+      ItemType: 0
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 2
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 56c15b7b43f919645bb4d9757ea3d752, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: da6f5453014b3c0489a5838cf0a3319f, type: 2}
+    - Index: 26
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 6cbf07c120c17ec4c8e5d49c10bd9728, type: 2}
+      ItemType: 0
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 2
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 38e0785d535aa044f88b062b4371221d, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 341fdb4326f55944a9785d65fc72da49, type: 2}
+    - Index: 21
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: a52d36a05c6747e42a8c214418fb33c4, type: 2}
+      ItemType: 0
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 2
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 0e2f2a18feb710641b29a6ae548f39e1, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: d8e944d7c99926240ae1a8c93bff926b, type: 2}
+    - Index: 22
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 8c3273939403d4248b6aaaae0188f540, type: 2}
+      ItemType: 0
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 3
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: c3b3983e87c820d48abb857339212fae, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: e18d19c5dbd4e8a4a84ca34eda5509e9, type: 2}
+    - Index: 23
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: ce35d22efcfc12241a8ed887c1445332, type: 2}
+      ItemType: 0
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 1
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 07c2976e39bcd8c4382cac78ace2aeeb, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 428be48d0edce9345bd0aded68ce1355, type: 2}
+    - Index: 24
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 7479f913b7079fe4ca47efd5529bed55, type: 2}
+      ItemType: 0
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 1
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 65ef8d23847287140bb035174fea448c, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 155cbd8df0152ff4192ca0c6e6df5e96, type: 2}
+    - Index: 19
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 4ed48004e6e987e409a1402ee13d34bc, type: 2}
+      ItemType: 0
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 2
+      RequiredMoney: 0
+      RequiredLevel: 2
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 7d9c2975bfe834042b8dd9294f53bd1d, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 9704187ddf2a92745a8116e949c22d63, type: 2}
+    - Index: 20
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 867b3d72e9a67fa4497ce33ad7f19795, type: 2}
+      ItemType: 0
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 1
+      RequiredMoney: 0
+      RequiredLevel: 10
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 2fee6cd283acef2428c5e7b6a2736972, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: fa79c6e4e70f2ec44abddff5e879a9f0, type: 2}
+    WeaponList:
+    - Index: 0
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 12df65a1cab8e7d44a596b7032a1b4cf, type: 2}
+      ItemType: 1
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 12df65a1cab8e7d44a596b7032a1b4cf, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: b42d73ef412d41e41a0d5d40977ca574, type: 2}
+    - Index: 1
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 5786217e1c1ef1c46b092039dcce5c01, type: 2}
+      ItemType: 1
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 5786217e1c1ef1c46b092039dcce5c01, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: e1320ce9c2ddac74bad956162256cd1a, type: 2}
+    - Index: 2
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 158b5bdec65a25c4084525fb5b2db90a, type: 2}
+      ItemType: 1
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 158b5bdec65a25c4084525fb5b2db90a, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 5c96bdc50005427498da05efad36b490, type: 2}
+    - Index: 3
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: c5c2bb9ee0e2b944fa6b866b739ac11a, type: 2}
+      ItemType: 1
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: c5c2bb9ee0e2b944fa6b866b739ac11a, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 610afe9ebb801374994a7be798065a11, type: 2}
+    - Index: 4
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: fc4b51b8cca585b45a828ef1b5d45c7b, type: 2}
+      ItemType: 1
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: fc4b51b8cca585b45a828ef1b5d45c7b, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: a716a08b432dec64a8e64ad373dc0263, type: 2}
+    - Index: 5
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: ccc6c30ad99186d41a7a3a15b34434df, type: 2}
+      ItemType: 1
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: ccc6c30ad99186d41a7a3a15b34434df, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: a55eb6d9b3d43904eb00a50868347b3e, type: 2}
+    - Index: 6
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: fc5e62b860ef5f24e939523e17e1209d, type: 2}
+      ItemType: 1
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: fc5e62b860ef5f24e939523e17e1209d, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 848d9aeb02aad394ba4098e14a92b13c, type: 2}
+    - Index: 7
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 40a58aa7bc4b2f24ca6f9084f4c87ef9, type: 2}
+      ItemType: 1
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 40a58aa7bc4b2f24ca6f9084f4c87ef9, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 6d4256c6a08a964409b214b06ca4cbb9, type: 2}
+    - Index: 8
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: d0c7cfd8ea878fa4580f8bd315ab7d05, type: 2}
+      ItemType: 1
+      ItemRarity: 0
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: d0c7cfd8ea878fa4580f8bd315ab7d05, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: f9264667a1a06874a8f69196f8653db4, type: 2}
+    - Index: 16
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 274a5487cbd86eb4d8fc991d0c33071a, type: 2}
+      ItemType: 1
+      ItemRarity: 1
+      UnlockMethod: 0
+      RequiredAdsToWatch: 2
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 274a5487cbd86eb4d8fc991d0c33071a, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 5da92c3803e6377468884e224a237f2e, type: 2}
+    - Index: 10
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 4d06f55322be5d24bba9b4df6a1992df, type: 2}
+      ItemType: 1
+      ItemRarity: 1
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 4d06f55322be5d24bba9b4df6a1992df, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 92f2196d6c455bd4db57ebe0b1ef8eaa, type: 2}
+    - Index: 17
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 4a552847cf9aa864da6a300b74fff93c, type: 2}
+      ItemType: 1
+      ItemRarity: 1
+      UnlockMethod: 0
+      RequiredAdsToWatch: 2
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 4a552847cf9aa864da6a300b74fff93c, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 7bf18d1b9fd23d64eae244b09cc7e300, type: 2}
+    - Index: 12
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: fbc18d4a40bc5a64caa6f8af0f461f43, type: 2}
+      ItemType: 1
+      ItemRarity: 1
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: fbc18d4a40bc5a64caa6f8af0f461f43, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: e3e386c907af8464cae1e8277b6abad1, type: 2}
+    - Index: 13
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 5e152c35f932e954a81bef61c1ce67ba, type: 2}
+      ItemType: 1
+      ItemRarity: 1
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 5e152c35f932e954a81bef61c1ce67ba, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 655dd5a3cc4469543b0fbd772eb79dbb, type: 2}
+    - Index: 14
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 1bb59cc2547cc424b82a4e440b64192c, type: 2}
+      ItemType: 1
+      ItemRarity: 1
+      UnlockMethod: 0
+      RequiredAdsToWatch: 0
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 1bb59cc2547cc424b82a4e440b64192c, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: fb4983a245b37b74d82157ddadfbcb2a, type: 2}
+    - Index: 15
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: f6a2c6e75ec995648bf9e375a0e96518, type: 2}
+      ItemType: 1
+      ItemRarity: 1
+      UnlockMethod: 0
+      RequiredAdsToWatch: 2
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: f6a2c6e75ec995648bf9e375a0e96518, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: e6b08791e6a1f1142b8960d07399bbaf, type: 2}
+    - Index: 9
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: cf5d723a22ea2254f9b06f7f1005c1bf, type: 2}
+      ItemType: 1
+      ItemRarity: 1
+      UnlockMethod: 1
+      RequiredAdsToWatch: 1
+      RequiredMoney: 0
+      RequiredLevel: 8
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: cf5d723a22ea2254f9b06f7f1005c1bf, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: c6f3de8e801999b4aa9542cd9c0466ad, type: 2}
+    - Index: 11
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: a232d473ef6aa7144a53efd75f278318, type: 2}
+      ItemType: 1
+      ItemRarity: 1
+      UnlockMethod: 1
+      RequiredAdsToWatch: 1
+      RequiredMoney: 0
+      RequiredLevel: 16
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: a232d473ef6aa7144a53efd75f278318, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: f0076c3138c572b49b0a0d310dcf3979, type: 2}
+    - Index: 25
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: b196f034c91fac34b8afe286706e3f51, type: 2}
+      ItemType: 1
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 2
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: b196f034c91fac34b8afe286706e3f51, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 702f54a0e67ecfe4ca962c3b9c5e0756, type: 2}
+    - Index: 19
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 7695ec6e0ad86784cac88cabad62a53e, type: 2}
+      ItemType: 1
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 2
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 7695ec6e0ad86784cac88cabad62a53e, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 14d988ac0f2786e408d778c6dfb0e2c6, type: 2}
+    - Index: 20
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: ba93ac5efc064f44190bcf26f1a94193, type: 2}
+      ItemType: 1
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 1
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: ba93ac5efc064f44190bcf26f1a94193, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 7cfc0f6cf82f72946ba38de88c4938e9, type: 2}
+    - Index: 21
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 60cab138d8728eb40816525956521845, type: 2}
+      ItemType: 1
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 2
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 60cab138d8728eb40816525956521845, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: aafbc1506c1f98b42bac3a2eed901977, type: 2}
+    - Index: 22
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: da34f7304a4934e4394355f99b9eb0f0, type: 2}
+      ItemType: 1
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 3
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: da34f7304a4934e4394355f99b9eb0f0, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 3cb1fcbc8f78d28449795183f70cc9cf, type: 2}
+    - Index: 23
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 9899c9c3307e59541be5b55d656f49aa, type: 2}
+      ItemType: 1
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 1
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 9899c9c3307e59541be5b55d656f49aa, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 605e4238838539e4eb211953fa40e46d, type: 2}
+    - Index: 26
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 360f5cd4caba1a74e8e5156339a7fd39, type: 2}
+      ItemType: 1
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 2
+      RequiredMoney: 0
+      RequiredLevel: 0
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 360f5cd4caba1a74e8e5156339a7fd39, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 721c775a5944c224092be46b6b0e8df5, type: 2}
+    - Index: 24
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 5718172e35b40d249aa51df879a0910e, type: 2}
+      ItemType: 1
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 1
+      RequiredMoney: 0
+      RequiredLevel: 4
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 5718172e35b40d249aa51df879a0910e, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: d8777648f1a2bc14da7364e1dc9b61d7, type: 2}
+    - Index: 18
+      Name: UNAMED
+      Sprite: {fileID: 21300000, guid: 24cb2e45c4276e141919bfc41252ec03, type: 2}
+      ItemType: 1
+      ItemRarity: 2
+      UnlockMethod: 1
+      RequiredAdsToWatch: 1
+      RequiredMoney: 0
+      RequiredLevel: 12
+      Chance: 1
+      RewardData:
+        RewardSprite: {fileID: 21300000, guid: 24cb2e45c4276e141919bfc41252ec03, type: 2}
+        RewardMaskSprite: {fileID: 21300000, guid: 1ab94f96bbe19254a8fa8b41f739f8e9, type: 2}
+  ShopSettings:
+    Ad_RewardAmount: 200
+    m_GetRandomItemPrice:
+      CommonPrice:
+        Rarity: 0
+        MoneyRandomPrice: 250
+      RarePrice:
+        Rarity: 1
+        MoneyRandomPrice: 500
+      EpicPrice:
+        Rarity: 2
+        MoneyRandomPrice: 750
+    RandomAnimationSettings:
+      RandomAnimationTime: 2.5
+      RandomAnimationStep: 0.075
+      RandomAnimationStepIncrease: 1.2
+  RewardSettings:
+    EnableGetItemNow: 0
+    FakePurcentage: 0.1
+    DisplayContinueDelay: 0.75
+  ColorSettings:
+    CommonColorSet: {fileID: 11400000, guid: e5512ef851427324898e44d9fac6b972, type: 2}
+    RareColorSet: {fileID: 11400000, guid: fbd17fc27988d874393d5cf435e3444b, type: 2}
+    EpicColorSet: {fileID: 11400000, guid: 0c53efde7bd5c2948999585fd85a9eea, type: 2}

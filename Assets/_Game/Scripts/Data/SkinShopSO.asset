@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a604e40ed67983a469d90fa8d75e752a, type: 3}
+  m_Name: SkinShopSO
+  m_EditorClassIdentifier: 
+  skinShopItems:
+  - spriteLock: {fileID: 21300000, guid: 7d60442f3bdd21742aaed9bd98aa13d7, type: 3}
+    spriteOpen: {fileID: 21300000, guid: b9259263b5ac29a4581786df8b511a03, type: 3}
+    type: 0
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: 829964babaa17234891182db1d6b7946, type: 3}
+    spriteOpen: {fileID: 21300000, guid: 0f9cd0e03cede40499828bbb520a83af, type: 3}
+    type: 0
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: e90c03ebc648e244f87c9ba1b4217f34, type: 3}
+    spriteOpen: {fileID: 21300000, guid: a73fd4c42b6fcb2468eabc882098de01, type: 3}
+    type: 0
+    style: 1
+  - spriteLock: {fileID: 21300000, guid: 9c471ee6c0168ee449e466ab1bb35bc2, type: 3}
+    spriteOpen: {fileID: 21300000, guid: 53a73e54175d0ff439bf75b9e20a7211, type: 3}
+    type: 0
+    style: 1
+  - spriteLock: {fileID: 21300000, guid: ae9543e29b63e764ba4850ad43199e04, type: 3}
+    spriteOpen: {fileID: 21300000, guid: a9a8e5d0a43df6a4c824ffc9fe8d2d66, type: 3}
+    type: 0
+    style: 1
+  - spriteLock: {fileID: 21300000, guid: 1bed44306a250f047b304423b58678ac, type: 3}
+    spriteOpen: {fileID: 21300000, guid: cd6327837aa8de6419c55ed4f8bfc0c1, type: 3}
+    type: 0
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: b3211609984e43a418713a4d54283eb6, type: 3}
+    spriteOpen: {fileID: 21300000, guid: d949b1135a71314468ba27f57f3ad4cb, type: 3}
+    type: 0
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: 9f88e3b71efa1e34b822e50a7b15230c, type: 3}
+    spriteOpen: {fileID: 21300000, guid: 7a579144dc70453459e0d2b8a673e084, type: 3}
+    type: 0
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: 7181cb9df009ceb449df33d421219f3b, type: 3}
+    spriteOpen: {fileID: 21300000, guid: 3c9045ff4f3a43f43b83ca1c3d66ed60, type: 3}
+    type: 0
+    style: 1
+  - spriteLock: {fileID: 21300000, guid: 262cb27de2dde1b49aff88597d89692f, type: 3}
+    spriteOpen: {fileID: 21300000, guid: bfe6325f94d590c43991cf3aeeb82961, type: 3}
+    type: 1
+    style: 1
+  - spriteLock: {fileID: 21300000, guid: 701ae3ace41a7ee4f921a0902b018b84, type: 3}
+    spriteOpen: {fileID: 21300000, guid: b7ba68f694439b94b97a4946fc380d9d, type: 3}
+    type: 1
+    style: 1
+  - spriteLock: {fileID: 21300000, guid: afed1ef99a1dad0498b8dae688ec903d, type: 3}
+    spriteOpen: {fileID: 21300000, guid: 566d9317eb88c344b8287c735632fc41, type: 3}
+    type: 1
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: b023b649343929c47967659b2c5f0ad8, type: 3}
+    spriteOpen: {fileID: 21300000, guid: aaebb0a25578ed543b82efff0a1b8a3d, type: 3}
+    type: 1
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: 5aa748223ceec1e4190b157782a32677, type: 3}
+    spriteOpen: {fileID: 21300000, guid: 7ea87b1fa3761524ca032bf531e15e0f, type: 3}
+    type: 1
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: 25a68d7d935489f43879dde845504c14, type: 3}
+    spriteOpen: {fileID: 21300000, guid: 3597ddfcd86c772458ede8ef6b933092, type: 3}
+    type: 1
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: e296b5f71b6c27541a243bd6b4239025, type: 3}
+    spriteOpen: {fileID: 21300000, guid: 908f0b12ce9da7d4697d43a7f6743437, type: 3}
+    type: 1
+    style: 1
+  - spriteLock: {fileID: 21300000, guid: 2a2936fc8829cf9408e5f3b57af86ec2, type: 3}
+    spriteOpen: {fileID: 21300000, guid: 4cd36cc7d846c0f48a3201e5538cd339, type: 3}
+    type: 1
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: fc0d969c943bf2e4cb4797e855e15088, type: 3}
+    spriteOpen: {fileID: 21300000, guid: a374304c4d80bbd45b99ae328b9a683b, type: 3}
+    type: 1
+    style: 1
+  - spriteLock: {fileID: 21300000, guid: d1bafde730541c74db57033591d9bdd5, type: 3}
+    spriteOpen: {fileID: 21300000, guid: af1863513159e034f9d77d78bc0076c9, type: 3}
+    type: 2
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: 405ecd9e8df36334bb998dd18502e02b, type: 3}
+    spriteOpen: {fileID: 21300000, guid: c608c0d3e999e3449adc5666a0248815, type: 3}
+    type: 2
+    style: 2
+  - spriteLock: {fileID: 21300000, guid: 7c265a20de31c0248924104bde8e85d2, type: 3}
+    spriteOpen: {fileID: 21300000, guid: ec02f9c38f6f4944a92f43249c30fdca, type: 3}
+    type: 2
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: 8896e67c6e55a2c41a0d87532b85239e, type: 3}
+    spriteOpen: {fileID: 21300000, guid: bf361a7386b63ea4591d73a11110a9f3, type: 3}
+    type: 2
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: bd860b38bd68c5d4a967ca7759761cf2, type: 3}
+    spriteOpen: {fileID: 21300000, guid: 23950159a9a766341ab72a2fd18bcd7f, type: 3}
+    type: 2
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: d437de90adaccab43ac215b813608542, type: 3}
+    spriteOpen: {fileID: 21300000, guid: 3beb6128c121ebf459ea36564f4807aa, type: 3}
+    type: 2
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: 99963f6e9bf763c4ca5621fcc063d1c6, type: 3}
+    spriteOpen: {fileID: 21300000, guid: b5611a71dbe17ef4c992a4bb4cdef4e8, type: 3}
+    type: 2
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: ff996721f27274a47894058e419fe756, type: 3}
+    spriteOpen: {fileID: 21300000, guid: 89afbdef2a3a27f4e8a058ac265856b3, type: 3}
+    type: 2
+    style: 0
+  - spriteLock: {fileID: 21300000, guid: 19ceb5c5ec16ae549a32e90f98f41a74, type: 3}
+    spriteOpen: {fileID: 21300000, guid: f6ebb697d626b164c89e21dcfa7bed1c, type: 3}
+    type: 2
+    style: 1

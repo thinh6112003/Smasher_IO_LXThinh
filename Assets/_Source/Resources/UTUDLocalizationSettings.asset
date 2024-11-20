@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b7897f2ce6a95c252df8a58065ff39, type: 3}
+  m_Name: UTUDLocalizationSettings
+  m_EditorClassIdentifier:
+  _useCustomLocalization: 1
+  _localizations:
+  - Code: ru
+    LocalizedText: Информация об устройстве будет использована для предоставления подходящего для Вас контента
+  - Code: zh-Hant
+    LocalizedText: 裝置會被用來提供與你更相關的內容
+  - Code: zh-Hans
+    LocalizedText: 设备会被用来为你提供更具相关性的内容
+  - Code: fr
+    LocalizedText: Les informations de l'appareil serviront à fournir des contenus plus pertinents
+  - Code: de
+    LocalizedText: Die Geräteinformation wird verwendet, um auf dich zugeschnittene Inhalte zu liefern.
+  - Code: hi
+    LocalizedText: अधिक प्रासंगिक सामग्री वितरित करने के लिए डिवाइस की जानकारी का उपयोग किया जाएगा
+  - Code: id
+    LocalizedText: Informasi perangkat akan digunakan untuk mengirimkan lebih banyak konten yang berkaitan
+  - Code: it
+    LocalizedText: Le informazioni sul dispositivo verranno usate per offrirti contenuti più interessanti
+  - Code: ja
+    LocalizedText: デバイス情報は関連性の高いコンテンツを表示するために使用されます
+  - Code: ko
+    LocalizedText: 기기 정보는 보다 관련성이 높은 콘텐츠를 제공하는 데 사용됩니다
+  - Code: ms
+    LocalizedText: Maklumat peranti akan digunakan untuk menyampaikan kandungan yang lebih relevan
+  - Code: pl
+    LocalizedText: Aby dostarczać ciekawszą zawartość, użyte zostaną informacje o urządzeniu
+  - Code: pt-br
+    LocalizedText: Usaremos os dados do dispositivo para oferecer conteúdo mais relevante.
+  - Code: pt
+    LocalizedText: As informações do dispositivo serão usadas para apresentar conteúdo mais relevante.
+  - Code: es
+    LocalizedText: 'Los datos del dispositivo se utilizarán para ofrecer contenido más relevante '
+  - Code: es-419
+    LocalizedText: 'La información del dispositivo será utilizada para ofrecer contenido más relevante '
+  - Code: th
+    LocalizedText: เราจะใช้ข้อมูลอุปกรณ์เพื่อแสดงเนื้อหาที่ตรงกับความสนใจของคุณมากยิ่งขึ้น
+  - Code: tr
+    LocalizedText: 'Cihaz bilgileri özelleştirilmiş içerikler sunmak için kullanılacak. '
+  - Code: vi
+    LocalizedText: Thông tin thiết bị sẽ được sử dụng để cung cấp nội dung phù hợp hơn

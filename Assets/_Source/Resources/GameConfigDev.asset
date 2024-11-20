@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017d974c801a849efe21c2094f716838, type: 3}
+  m_Name: GameConfigDev
+  m_EditorClassIdentifier:
+  MaterialData: {}
+  Prefabs:
+    Hammer: {fileID: 114805431649891876, guid: b90884cc078208f45ac36176c94c47b1, type: 2}
+    CoinObject: {fileID: 114520236290338168, guid: 4de58f367706a584fad3571f96945888, type: 2}
+    Skins:
+      m_Skins:
+      - {fileID: 0}
+    CoinEarnIcon: {fileID: 114549102585235891, guid: ce294694ac087c7489f82e357027878b, type: 2}
+  CoinPickupTime:
+    Min: 0.3
+    Max: 0.3
