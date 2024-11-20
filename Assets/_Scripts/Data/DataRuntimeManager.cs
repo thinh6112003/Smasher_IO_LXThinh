@@ -22,6 +22,7 @@ public class DataRuntimeManager : KBTemplate.Patterns.Singleton.Singleton<DataRu
     {
         LoadShopDataRuntime();
         LoadDynamicDataRuntime();
+        Debug.Log("1111");
     }
 
     #region shop data

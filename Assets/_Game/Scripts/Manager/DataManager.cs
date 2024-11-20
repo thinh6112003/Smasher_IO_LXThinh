@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DataManager : Singleton<DataManager>
@@ -10,10 +11,12 @@ public class DataManager : Singleton<DataManager>
     public int score = 0;
     public int earned = 100;
     public int enemy = 100;
-    private const string keyGetSetData = "DynamicData";
-    void Awake()
+    private void Awake()
     {
         DontDestroyOnLoad(gameObject);
+    }
+    void OnEnable()
+    {
         dynamicData = DataRuntimeManager.Instance.dynamicData;
         shopData = DataRuntimeManager.Instance.shopData;
     } 

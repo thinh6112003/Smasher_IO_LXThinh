@@ -15,7 +15,7 @@ public class ShopData
 
     public ShopData()
     {
-        countOfSkins = 29;
+        countOfSkins = 27;
         countOfWeapons = 27;
         skinsStatus = new List<bool>();
         SetAllSkins();

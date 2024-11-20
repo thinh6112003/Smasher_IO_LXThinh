@@ -56,20 +56,22 @@ public class ShopSkin : MonoBehaviour
         buttonCommon.onClick.AddListener(OnclickButtonCommon);
         buttonEpic.onClick.AddListener(OnclickButtonEpic);
         buttonRare.onClick.AddListener(OnclickButtonRare);
-        dynamicData = DataManager.Instance.dynamicData;
     }
     private void OnEnable()
     {
-        if(currentIDSkinSelect!= -1)
+        if (currentIDSkinSelect!= -1)
         {
+            Debug.Log("zxxx");
             ChangeSkinSelectByID(currentIDSkinSelect);
             UpdateButtonRandom();
         }
     }
     private void Start()
     {
+        dynamicData = DataManager.Instance.dynamicData;
         currentIDSkinSelect = dynamicData.GetIdSkin();
         currentIDSkinEquip = currentIDSkinSelect;
+        Debug.Log(dynamicData.GetIdSkin() + "   in start");
         ChangeTab(skinShopSO.skinShopItems[currentIDSkinSelect].type);
         for (int i = 0; i < skinShopSO.skinShopItems.Count; i++)
         {
@@ -185,6 +187,8 @@ public class ShopSkin : MonoBehaviour
     }
     public void ChangeSkinSelectByID(int id)
     {
+        Debug.Log(id);
+        Debug.Log(currentIDSkinSelect + "   in change");
         skins[currentIDSkinSelect].SetActive(false);
         skinShopUnits[currentIDSkinSelect].SetDeSelect();
 

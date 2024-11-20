@@ -16,8 +16,8 @@ public class DynamicData
     {
         currentIDLevel = 1;
         currentMonney = 100;
-        idSkin = 1;
-        idWeapon = 1;
+        idSkin = 0;
+        idWeapon = 0;
         soundStatus = true;
         vibrationStatus = true;
     }
@@ -65,6 +65,7 @@ public class DynamicData
 
     public void SubtractMonney(int amount)
     {
+        Debug.Log("subtrack monney" + amount + "  " + currentMonney);
         currentMonney -= amount;
         Observer.Noti(constr.UPDATEUI);
     }
