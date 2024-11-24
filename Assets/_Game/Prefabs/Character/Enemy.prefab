@@ -28602,7 +28602,7 @@ MonoBehaviour:
   scaleValue: 1
   flatScale: {x: 1, y: 0.05, z: 1}
   parentModel: {fileID: 1990929091094466630}
-  collider: {fileID: 6216355994264770291}
+  myCollider: {fileID: 6216355994264770291}
   moveSpeed: 5
   paramForZoom: 3
   paramForScaleSpeed: 8
@@ -28610,8 +28610,8 @@ MonoBehaviour:
   hascode_cua_collider: 
   hascode_cuatoi: 
   animCharacter: {fileID: 1006641596288293278}
-  rigidbody: {fileID: 710874461140129252}
-  particleSystem: {fileID: 4611044163703160886}
+  myRigidbody: {fileID: 710874461140129252}
+  myParticleSystem: {fileID: 4611044163703160886}
   Hammer: {fileID: 3320953888497405655}
   inputEnemy: {fileID: 5543627606302469662}
   weaponController: {fileID: 6342701528911328044}
@@ -55857,7 +55857,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animHammer: {fileID: 5501160766112542603}
   currentHammerAnimName: Idle
-  particleSystem: {fileID: 3103203200600734844}
+  myParticleSystem: {fileID: 3103203200600734844}
   character: {fileID: 1916066720057288282}
   colliderHashCode: 
 --- !u!1 &4827125870678949433

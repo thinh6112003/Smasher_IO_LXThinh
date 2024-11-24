@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -111,7 +108,7 @@ public class UIManager : Singleton<UIManager>
     }
     private void UpdateTxtUI()
     {
-        DynamicData dynamicdata =  DataManager.Instance.dynamicData;
+        DynamicData dynamicdata = DataRuntimeManager.Instance.dynamicData;
         // level winlevel, gameplay
         // monney dung chung
         // so luong enemy con lai

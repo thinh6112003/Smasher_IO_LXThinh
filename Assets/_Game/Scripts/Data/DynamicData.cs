@@ -1,7 +1,5 @@
 using System;
-using Unity.VisualScripting;
 using UnityEngine;
-
 [Serializable]
 public class DynamicData
 {
@@ -17,7 +15,7 @@ public class DynamicData
         currentIDLevel = 1;
         currentMonney = 10000;
         idSkin = 0;
-        idWeapon = 0;
+        idWeapon = 4;
         soundStatus = true;
         vibrationStatus = true;
     }

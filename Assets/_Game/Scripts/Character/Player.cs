@@ -1,11 +1,6 @@
 using Cinemachine;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using DG;
 using DG.Tweening;
-using Unity.VisualScripting;
-using System;
 using System.Threading.Tasks;
 
 public class Player : Character
@@ -27,7 +22,6 @@ public class Player : Character
 
     #region properties
     [Header("Player properti")]
-    private bool isSetIndicator = false;
     [SerializeField] private FloatingJoystick floatingJoystick;
     [SerializeField] private GameObject dustrail;
     [SerializeField] private GameObject LookDir;
@@ -99,7 +93,6 @@ public class Player : Character
     {
         base.Start();
         Init();
-        Application.targetFrameRate = 60;
         Observer.AddListener(constr.ATTACK+ gameObject.GetHashCode(), ShakeCamera);
         Observer.AddListener(constr.DONELOADLEVEL, Init);
         Observer.AddListener(constr.WINGAME, AnMung);
@@ -137,7 +130,7 @@ public class Player : Character
     {
         base.Run(moveVector);
         dustrail.SetActive(true);
-        rigidbody.MovePosition(transform.position + moveVector);
+        myRigidbody.MovePosition(transform.position + moveVector);
     }
     protected override void Attack()
     {
@@ -216,5 +209,7 @@ public static class constr
     public static readonly string NEXTLEVEL= "NextLevel";
     public static readonly string ONEMOREKILL= "OneMoreKill";
     public static readonly string LOSEGAME= "LoseGame";
-    public static readonly string CHANGESKIN = "ChangeSkin";
+    public static readonly string CHANGESKIN = "Change Skin";
+    public static readonly string GETSHOPDATA = "Get Shop Data";
+    public static readonly string SETSHOPDATA = "Set Shop Data";
 }

@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
 public class PatrolState : Istate
@@ -35,7 +32,6 @@ public class PatrolState : Istate
     }
     public void OnUpdate(Enemy enemy)
     {
-        Debug.Log("patrol ");
         enemy.SetAnimation(AnimationType.RUN);
         MoveRandom();
         FindEnemy();
@@ -72,9 +68,9 @@ public class PatrolState : Istate
     }
     public bool CheckToEvade()
     {
-        mySelf.collider.enabled = false;
+        mySelf.myCollider.enabled = false;
         Collider[] hit = Physics.OverlapSphere(myTransform.position, 3f, layerCharacter);
-        mySelf.collider.enabled = true;
+        mySelf.myCollider.enabled = true;
 
         if (hit.Length > 0)
         {
@@ -95,9 +91,9 @@ public class PatrolState : Istate
 
     public bool CheckToChangePursue()
     {
-        mySelf.collider.enabled = false;
+        mySelf.myCollider.enabled = false;
         Collider[] hit = Physics.OverlapSphere(myTransform.position, 4.2f, layerCharacter);
-        mySelf.collider.enabled = true;
+        mySelf.myCollider.enabled = true;
 
         if (hit.Length > 0)
         {
@@ -141,9 +137,9 @@ public class PatrolState : Istate
     public bool GetEnemy()
     {
         float radiusObserve = Random.Range(6f, 9f);
-        mySelf.collider.enabled = false;
+        mySelf.myCollider.enabled = false;
         Collider[] hit = Physics.OverlapSphere(myTransform.position, radius, layerCharacter);
-        mySelf.collider.enabled = true;
+        mySelf.myCollider.enabled = true;
         if (hit.Length == 0)
         {
             enemy = null;

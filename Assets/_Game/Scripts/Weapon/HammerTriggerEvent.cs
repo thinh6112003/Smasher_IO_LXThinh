@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class HammerTriggerEvent : MonoBehaviour
 {
     public Animator animHammer;
     public string currentHammerAnimName = constr.IDLE;
-    public GameObject particleSystem;
+    public GameObject myParticleSystem;
     public GameObject character;
     public string colliderHashCode= "";
     bool isrun = false;
@@ -27,7 +25,7 @@ public class HammerTriggerEvent : MonoBehaviour
     {
         if (isrun) return;
         Observer.Noti(constr.ATTACK+ colliderHashCode);
-        ParticleSystem[] particles=  particleSystem.GetComponentsInChildren<ParticleSystem>();
+        ParticleSystem[] particles=  myParticleSystem.GetComponentsInChildren<ParticleSystem>();
         for(int i=0;i < particles.Length; i++)
         {
             particles[i].Play();

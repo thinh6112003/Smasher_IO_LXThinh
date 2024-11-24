@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
 using UnityEngine;
 
 public class DataRuntimeManager : KBTemplate.Patterns.Singleton.Singleton<DataRuntimeManager>
@@ -17,12 +14,14 @@ public class DataRuntimeManager : KBTemplate.Patterns.Singleton.Singleton<DataRu
         base.OnCreatedSingleton();
         DontDestroyOnLoad(this);
         Init();
+        Debug.Log(shopData);
+        Debug.Log(dynamicData);
+        Debug.Log("awake");
     }
     private void Init()
     {
         LoadShopDataRuntime();
         LoadDynamicDataRuntime();
-        Debug.Log("1111");
     }
 
     #region shop data

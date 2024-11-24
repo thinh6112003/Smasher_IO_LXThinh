@@ -43,7 +43,7 @@ public class AudioManager : Singleton<AudioManager>
         SoundSource.enabled = !SoundSource.enabled;
     }
     public void SetSound(SoundType soundType) {
-        if (!DataManager.Instance.dynamicData.GetSoundStatus()) return;
+        if (!DataRuntimeManager.Instance.dynamicData.GetSoundStatus()) return;
         switch (soundType) { 
             case SoundType.ButtonClick:
                 PlayButtonClickSound();
@@ -67,7 +67,7 @@ public class AudioManager : Singleton<AudioManager>
     }
     public void SetSound(SoundType soundType, float pitch)
     {
-        if (!DataManager.Instance.dynamicData.GetSoundStatus()) return;
+        if (!DataRuntimeManager.Instance.dynamicData.GetSoundStatus()) return;
         switch (soundType)
         {
             case SoundType.ButtonClick:

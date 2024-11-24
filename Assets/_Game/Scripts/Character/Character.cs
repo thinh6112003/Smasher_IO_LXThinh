@@ -12,7 +12,7 @@ public class Character : MonoBehaviour
     public float scaleValue= 1;
     public Vector3 flatScale= new Vector3(1f,0.05f,1f);
     public Transform parentModel;
-    public Collider collider;
+    public Collider myCollider;
     [SerializeField] protected float moveSpeed= 7;
     [SerializeField] protected float paramForZoom= 2;
     [SerializeField] protected float paramForScaleSpeed= 5;
@@ -20,8 +20,8 @@ public class Character : MonoBehaviour
     [SerializeField] protected string hascode_cua_collider;
     [SerializeField] protected string hascode_cuatoi;
     [SerializeField] protected Animator animCharacter;
-    [SerializeField] protected Rigidbody rigidbody;
-    [SerializeField] protected GameObject particleSystem;
+    [SerializeField] protected Rigidbody myRigidbody;
+    [SerializeField] protected GameObject myParticleSystem;
     [SerializeField] protected Transform Hammer;
     [SerializeField] protected GameObject inputEnemy;
     [SerializeField] protected WeaponController weaponController;
@@ -64,8 +64,8 @@ public class Character : MonoBehaviour
         isDie = false;
         lastCharAction = CharacterAction.IDLE;
         Hammer.gameObject.SetActive(true);
-        collider.enabled = true;
-        rigidbody.isKinematic = false;
+        myCollider.enabled = true;
+        myRigidbody.isKinematic = false;
         scaleValue = 1;
         scaleSpeed = 1;
 
@@ -89,11 +89,11 @@ public class Character : MonoBehaviour
     protected virtual async void Die(Weapon weaponhit,Transform enemyTf)
     {
         weaponhit.DeathAnimation(this,enemyTf);
-        particleSystem.SetActive(true);
+        myParticleSystem.SetActive(true);
         Hammer.gameObject.SetActive(false);
         parentModel.transform.localPosition = localPosModel_Die;
         GetComponent<Collider>().enabled = false;
-        rigidbody.isKinematic = true;
+        myRigidbody.isKinematic = true;
         isDie = true;
         await Task.Delay(2000);
         parentModel.DOScale(new Vector3(0, 0, 0), 1.4f).SetEase(Ease.InBack);
@@ -115,7 +115,7 @@ public class Character : MonoBehaviour
                 });
             });
     }
-    protected virtual async void Run(Vector3 moveVector)
+    protected virtual void Run(Vector3 moveVector)
     {        
         bool tmp = isRun;
         isRun = true;

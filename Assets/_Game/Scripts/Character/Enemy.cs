@@ -1,20 +1,15 @@
-using DG.Tweening;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UIElements;
 
 public class Enemy : Character
 {
     // get set rigitbody 
     public Vector3 nextPosition;
     public Vector3 MyEvadeVector = new Vector3();
-    public Rigidbody _rigidBody { get => rigidbody; set => rigidbody = value; }
+    public Rigidbody _rigidBody { get => myRigidbody; set => myRigidbody = value; }
     public CurrentEnemyState currentEnemyState;
     [SerializeField] public NavMeshAgent myAgent;
     private Istate currentState;
-    private float radius= 20;
     private Vector3 originPos;
 
     private void Awake()

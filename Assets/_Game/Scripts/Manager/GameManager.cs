@@ -1,10 +1,8 @@
-using System;
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static Cinemachine.DocumentationSortingAttribute;
 public class GameManager : Singleton<GameManager>
 {
     [SerializeField] private MapSO mapSO;
@@ -16,6 +14,7 @@ public class GameManager : Singleton<GameManager>
     //[SerializeField] private LoadSceneUI loadSceneUI;
     private void Awake()
     {
+        //DOTween.Init();
         DontDestroyOnLoad(gameObject);
         Observer.AddListener(constr.ONEMOREKILL, UpdateNumberOfEnemy);
     }
@@ -33,13 +32,17 @@ public class GameManager : Singleton<GameManager>
     {
         InitGame();
     }
+    private void Update()
+    {
+        Debug.Log(Time.deltaTime+ " ms , "+ 1f/Time.deltaTime+ " fps");
+    }
     private void InitGame()
     {
         Observer.AddListener(constr.NEXTLEVEL, LoadNextLevel);
         Observer.AddListener(constr.RELOADLEVEL, ReLoadLevel);
         sceneToLoad.Add(SceneManager.LoadSceneAsync
         (
-            DataManager.Instance.dynamicData.CurrentEnviromentSceneName(), LoadSceneMode.Additive)
+            DataRuntimeManager.Instance.dynamicData.CurrentEnviromentSceneName(), LoadSceneMode.Additive)
         );
         sceneToLoad.Add(SceneManager.LoadSceneAsync(constr.HOMESCENE, LoadSceneMode.Additive));
         StartCoroutine(LoadingProgress());
@@ -47,7 +50,7 @@ public class GameManager : Singleton<GameManager>
     private IEnumerator LoadingProgress()
     {
         while (!sceneToLoad[0].isDone || !sceneToLoad[1].isDone) yield return null;
-        int idLevel = DataManager.Instance.dynamicData.currentIDLevel;
+        int idLevel = DataRuntimeManager.Instance.dynamicData.currentIDLevel;
         Scene targetScene = SceneManager.GetSceneByName("Map " + idLevel);
         SceneManager.SetActiveScene(targetScene);
         EnemyManager.Instance.InitEnemy(numberOfEnemy);
@@ -62,13 +65,13 @@ public class GameManager : Singleton<GameManager>
     private void LoadNextLevel()
     {
         numberOfEnemy = 20;
-        StartCoroutine(LoadingLevel(DataManager.Instance.dynamicData.GetCurrentIDLevel()));
+        StartCoroutine(LoadingLevel(DataRuntimeManager.Instance.dynamicData.GetCurrentIDLevel()));
     }
 
     private void ReLoadLevel()
     {
         numberOfEnemy = 20;
-        StartCoroutine(LoadingLevel(DataManager.Instance.dynamicData.GetCurrentIDLevel(), true));
+        StartCoroutine(LoadingLevel(DataRuntimeManager.Instance.dynamicData.GetCurrentIDLevel(), true));
     }
     private IEnumerator LoadingLevel(int idLevel, bool reload = false)
     {
@@ -79,7 +82,7 @@ public class GameManager : Singleton<GameManager>
 
         yield return new WaitForSeconds(0.3f);
         AsyncOperation t = SceneManager.LoadSceneAsync(
-            DataManager.Instance.dynamicData.CurrentEnviromentSceneName(), LoadSceneMode.Additive
+            DataRuntimeManager.Instance.dynamicData.CurrentEnviromentSceneName(), LoadSceneMode.Additive
         );
 
         while (!t.isDone) yield return null;

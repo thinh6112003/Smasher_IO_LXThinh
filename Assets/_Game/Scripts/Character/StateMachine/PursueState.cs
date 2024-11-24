@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UIElements;
 
 public class PursueState : Istate
 {
@@ -87,9 +84,9 @@ public class PursueState : Istate
     }
     public bool CheckToEvade()
     {
-        mySelf.collider.enabled = false;
+        mySelf.myCollider.enabled = false;
         Collider[] hit = Physics.OverlapSphere(myTransform.position, 3f*mySelf.scaleValue, layerCharacter);
-        mySelf.collider.enabled = true;
+        mySelf.myCollider.enabled = true;
 
         if (hit.Length > 0)
         {
@@ -110,9 +107,9 @@ public class PursueState : Istate
 
     public bool CheckToChangePursue()
     {
-        mySelf.collider.enabled = false;
+        mySelf.myCollider.enabled = false;
         Collider[] hit = Physics.OverlapSphere(myTransform.position, 4.2f*mySelf.scaleValue, layerCharacter);
-        mySelf.collider.enabled = true;
+        mySelf.myCollider.enabled = true;
 
         if (hit.Length > 0)
         {

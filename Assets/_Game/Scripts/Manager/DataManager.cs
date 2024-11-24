@@ -1,13 +1,8 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class DataManager : Singleton<DataManager>
 {
-    public DynamicData dynamicData;
-    public ShopData shopData;
+    //public ShopData shopData;
     public int score = 0;
     public int earned = 100;
     public int enemy = 100;
@@ -17,22 +12,18 @@ public class DataManager : Singleton<DataManager>
     }
     void OnEnable()
     {
-        dynamicData = DataRuntimeManager.Instance.dynamicData;
-        shopData = DataRuntimeManager.Instance.shopData;
+        Debug.Log("onena ble");
+       // shopData = DataRuntimeManager.Instance.shopData;
     } 
     private void Start()
     {
         Observer.AddListener(constr.DONELOADLEVEL, InitGame);
         Observer.AddListener(constr.WINGAME, FinishGame);
-        Observer.AddListener(constr.NEXTLEVEL, () =>
-        {
-            dynamicData.AddMonney(earned);
-        });
     }
 
     private void FinishGame()
     {
-        dynamicData.NextCurrentIDLevel();
+        DataRuntimeManager.Instance.dynamicData.NextCurrentIDLevel();
     }
 
     private void UpdateScore()
