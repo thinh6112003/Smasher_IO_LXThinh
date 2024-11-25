@@ -84,13 +84,13 @@ public abstract class Shop : MonoBehaviour
             ShopItem newShopItem = shopItems[i];
             switch (newShopItem.type)
             {
-                case Type.RARE:
+                case ShopType.RARE:
                     AddItemShop(rareContentRectTf, raceContentTf, ref countRaRe, i, itemRares);
                     break;
-                case Type.EPIC:
+                case ShopType.EPIC:
                     AddItemShop(epicContentRectTf, epicContentTf, ref countEpic, i, itemEpics);
                     break;
-                case Type.COMMON:
+                case ShopType.COMMON:
                     AddItemShop(commonContentRectTf, commonContentTf, ref countCommon, i, itemCommons);
                     break;
             }
@@ -119,15 +119,15 @@ public abstract class Shop : MonoBehaviour
     }
     protected void OnclickButtonRare()
     {
-        ChangeTab(Type.RARE);
+        ChangeTab(ShopType.RARE);
     }
     protected void OnclickButtonEpic()
     {
-        ChangeTab(Type.EPIC);
+        ChangeTab(ShopType.EPIC);
     }
     protected void OnclickButtonCommon()
     {
-        ChangeTab(Type.COMMON);
+        ChangeTab(ShopType.COMMON);
     }
     protected void UpdateButtonRandom()
     {
@@ -150,24 +150,24 @@ public abstract class Shop : MonoBehaviour
             buttonUnlockRandom.interactable = true;
         }
     }
-    protected void ChangeTab(Type type)
+    protected void ChangeTab(ShopType type)
     {
         if (currentTab != null) currentTab.SetActive(false);
         switch (type)
         {
-            case Type.COMMON:
+            case ShopType.COMMON:
                 currentTab = commonContentTf.gameObject;
                 listItemCurrent = itemCommons;
                 currentRandomPrice = priceRandomCommon;
                 textPrice.text = "50";
                 break;
-            case Type.EPIC:
+            case ShopType.EPIC:
                 currentTab = epicContentTf.gameObject;
                 listItemCurrent = itemEpics;
                 currentRandomPrice = priceRandomEpic;
                 textPrice.text = "1000";
                 break;
-            case Type.RARE:
+            case ShopType.RARE:
                 currentTab = rareContentRectTf.gameObject;
                 listItemCurrent = itemRares;
                 currentRandomPrice = priceRandomRare;

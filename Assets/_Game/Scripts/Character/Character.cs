@@ -68,7 +68,6 @@ public class Character : MonoBehaviour
         myRigidbody.isKinematic = false;
         scaleValue = 1;
         scaleSpeed = 1;
-
     }
     protected virtual void Attack()
     {
@@ -196,11 +195,14 @@ public enum AnimationType
 {
     RUN,
     IDLE,
+
     DIE,
     DIEMACE,
+
     ATTACKHAMMER,
     ATTACKMACE,
     ATTACKAXE,
+
     ANMUNG,
     TOIDLE
 }

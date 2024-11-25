@@ -2,15 +2,15 @@ using System;
 [Serializable]
 public class SkinShopItem : ShopItem
 {
-    public Style style;// heroA, heroB, amongus
+    public ShopStyle style;// heroA, heroB, amongus
 }
-public enum Type
+public enum ShopType
 {
     COMMON,
     RARE,
     EPIC
 }
-public enum Style
+public enum ShopStyle
 {
     HEROA,
     HEROB,

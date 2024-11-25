@@ -25,7 +25,7 @@ public class ShopSkin : Shop
     public override void ChangeSelectByID(int id)
     {
         base.ChangeSelectByID(id);
-        if (skinShopSO.skinShopItems[id].style == Style.HEROA)
+        if (skinShopSO.skinShopItems[id].style == ShopStyle.HEROA)
             skinBase.SetActive(true);
         else
             skinBase.SetActive(false);

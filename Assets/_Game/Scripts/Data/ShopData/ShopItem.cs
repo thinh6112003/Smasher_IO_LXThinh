@@ -6,5 +6,5 @@ public abstract class ShopItem
 {
     public Sprite spriteLock;
     public Sprite spriteOpen;
-    public Type type; //common, rare, epic
+    public ShopType type; //common, rare, epic
 }
