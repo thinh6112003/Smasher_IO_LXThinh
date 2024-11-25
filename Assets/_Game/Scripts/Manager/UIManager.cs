@@ -2,10 +2,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Threading.Tasks;
+using UnityEditor;
+using DG.Tweening;
 
 public class UIManager : Singleton<UIManager>
 {
     public GameObject _eventSystem;
+    [SerializeField] private Image killProgress;
     [SerializeField] private Button playButton;
     [SerializeField] private Button settingButton;
     [SerializeField] private Button rePlayButton;
@@ -28,6 +31,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject weaponSceneUI;
     [SerializeField] private GameObject skinSceneUI;
     [SerializeField] private GameObject slotSceneUI;
+    [SerializeField] private GameObject tutorialUI;
 
     [SerializeField] private TMP_Text monney_Txt;
     [SerializeField] private TMP_Text level_WinGame_Txt;
@@ -106,12 +110,25 @@ public class UIManager : Singleton<UIManager>
         //AudioManager.Instance.SetSound(AudioManager.SoundType.ButtonClick);
         settingPopup.SetActive(true);
     }
-    private void UpdateTxtUI()
+    public void UpdateTxtUI()
     {
         DynamicData dynamicdata = DataRuntimeManager.Instance.dynamicData;
         // level winlevel, gameplay
         // monney dung chung
         // so luong enemy con lai
+
+        monney_Txt.text = dynamicdata.GetCurrentMonney().ToString();
+        level_WinGame_Txt.text = "LEVEL "+dynamicdata.GetCurrentIDLevel().ToString()+"\nCOMPLETE";
+        level_Current_GP_Txt.text = dynamicdata.GetCurrentIDLevel().ToString();
+        level_Next_GP_Txt.text = (dynamicdata.GetCurrentIDLevel()+1).ToString();
+        countEnemy.text = GameManager.Instance.GetNumberOfEnemy().ToString()+ " PLAYER LEFT";
+    }
+    public void UpdateProcess()
+    {
+        killProgress
+            .DOFillAmount((20f - GameManager.Instance.GetNumberOfEnemy()) / 20f, 0.1f)
+            .SetEase(Ease.Linear);
+        UpdateTxtUI();
     }
     private void OnClickReplayButton()
     {
@@ -128,6 +145,8 @@ public class UIManager : Singleton<UIManager>
         //AudioManager.Instance.SetSound(AudioManager.SoundType.ButtonClick);
         Observer.Noti(constr.CHANGE_CAMERA_PLAY);
         SetUIScene(SceneUIType.GamePlay);
+        tutorialUI.SetActive(true);
+        UpdateProcess();
     }
     private async void SetWinLevel()
     {

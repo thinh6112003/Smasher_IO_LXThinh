@@ -14,9 +14,6 @@ public class DataRuntimeManager : KBTemplate.Patterns.Singleton.Singleton<DataRu
         base.OnCreatedSingleton();
         DontDestroyOnLoad(this);
         Init();
-        Debug.Log(shopData);
-        Debug.Log(dynamicData);
-        Debug.Log("awake");
     }
     private void Init()
     {
@@ -33,7 +30,10 @@ public class DataRuntimeManager : KBTemplate.Patterns.Singleton.Singleton<DataRu
             if (defaultSaveGameFile)
                 shopData = defaultSaveGameFile.shopData.DeepCopy();
             else
+            {
+                Debug.Log("defaultSaveGameFile is null");
                 shopData = new ShopData();
+            }
         }
     }
     #endregion
@@ -46,8 +46,10 @@ public class DataRuntimeManager : KBTemplate.Patterns.Singleton.Singleton<DataRu
         {
             if (defaultSaveGameFile)
                 dynamicData = defaultSaveGameFile.dynamicData.DeepCopy();
-            else
-                dynamicData = new DynamicData();
+            else {
+                Debug.Log("defaultSaveGameFile is null");
+                dynamicData = new DynamicData();    
+            }
         }
     }
     #endregion

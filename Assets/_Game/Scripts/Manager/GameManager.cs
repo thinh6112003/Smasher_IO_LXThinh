@@ -22,6 +22,8 @@ public class GameManager : Singleton<GameManager>
     private void UpdateNumberOfEnemy()
     {
         numberOfEnemy--;
+        Debug.Log("one more kill");
+        UIManager.Instance.UpdateProcess();
         if (numberOfEnemy == 0) 
         {
             Observer.Noti(constr.WINGAME);
@@ -34,7 +36,7 @@ public class GameManager : Singleton<GameManager>
     }
     private void Update()
     {
-        Debug.Log(Time.deltaTime+ " ms , "+ 1f/Time.deltaTime+ " fps");
+        //Debug.Log(Time.deltaTime+ " ms , "+ 1f/Time.deltaTime+ " fps");
     }
     private void InitGame()
     {
@@ -96,5 +98,9 @@ public class GameManager : Singleton<GameManager>
     public void setPlayer(Player player)
     {
         this.player = player;
+    }
+    public int GetNumberOfEnemy()
+    {
+        return numberOfEnemy;
     }
 }

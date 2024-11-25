@@ -10,11 +10,6 @@ public class DataManager : Singleton<DataManager>
     {
         DontDestroyOnLoad(gameObject);
     }
-    void OnEnable()
-    {
-        Debug.Log("onena ble");
-       // shopData = DataRuntimeManager.Instance.shopData;
-    } 
     private void Start()
     {
         Observer.AddListener(constr.DONELOADLEVEL, InitGame);

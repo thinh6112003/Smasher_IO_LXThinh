@@ -6,11 +6,13 @@ public class HammerTriggerEvent : MonoBehaviour
     public string currentHammerAnimName = constr.IDLE;
     public GameObject myParticleSystem;
     public GameObject character;
+    public Character _character;
     public string colliderHashCode= "";
     bool isrun = false;
     private void Start()
     {
         colliderHashCode = character.GetHashCode().ToString();
+        _character = character.GetComponent<Character>();
     }
     public void TriggerEvent()
     {
@@ -23,7 +25,7 @@ public class HammerTriggerEvent : MonoBehaviour
     }
     public void SetAttackHammer()
     {
-        if (isrun) return;
+        if (_character.isDie == true|| isrun) return;
         Observer.Noti(constr.ATTACK+ colliderHashCode);
         ParticleSystem[] particles=  myParticleSystem.GetComponentsInChildren<ParticleSystem>();
         for(int i=0;i < particles.Length; i++)

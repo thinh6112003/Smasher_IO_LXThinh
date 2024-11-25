@@ -159,16 +159,19 @@ public abstract class Shop : MonoBehaviour
                 currentTab = commonContentTf.gameObject;
                 listItemCurrent = itemCommons;
                 currentRandomPrice = priceRandomCommon;
+                textPrice.text = "50";
                 break;
             case Type.EPIC:
                 currentTab = epicContentTf.gameObject;
                 listItemCurrent = itemEpics;
                 currentRandomPrice = priceRandomEpic;
+                textPrice.text = "1000";
                 break;
             case Type.RARE:
                 currentTab = rareContentRectTf.gameObject;
                 listItemCurrent = itemRares;
                 currentRandomPrice = priceRandomRare;
+                textPrice.text = "200";
                 break;
         }
         currentTab.SetActive(true);
@@ -182,13 +185,19 @@ public abstract class Shop : MonoBehaviour
             contentRectTransform.sizeDelta += new Vector2(0, 54 + 200f);
         }
         ShopUnit newShopItemUnit = Instantiate(shopUnit, contenTransform);
-        newShopItemUnit.Init(shopItems[i], DataRuntimeManager.Instance.shopData.GetWeaponStatus(i), i, this, currentIDEquip == i);
+        AddItemShopWithType(i,ref newShopItemUnit);
         itemShopUnits.Add(newShopItemUnit);
         shopItemsOfType.Add(newShopItemUnit);
     }
+    public virtual void AddItemShopWithType(int i, ref ShopUnit newShopItemUnit)
+    {
+    }
     public virtual void ChangeSelectByID(int id)
     {
-        shopItemModels[currentIDSelect].SetActive(false);
+        if(shopItemModels[currentIDSelect]!= null)
+        {
+            shopItemModels[currentIDSelect].SetActive(false);
+        }
         itemShopUnits[currentIDSelect].SetDeSelect();
 
         currentIDSelect = id;

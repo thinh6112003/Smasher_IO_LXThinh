@@ -5,21 +5,6 @@ using System.Threading.Tasks;
 
 public class Player : Character
 {
-    #region testFuntion
-    [Header("Test case:")]
-    [SerializeField] private bool testInit= false;
-    [SerializeField] private bool testDie= false;
-    [SerializeField] private bool testShakeCamera= false;
-    [SerializeField] private bool testZoomUp= false;
-    [SerializeField] private int skinChangeID = 1;
-    [SerializeField] private bool testChangeSkin= false;
-    [SerializeField] private int weponChangeID = 1;
-    [SerializeField] private bool testChangeWepon= false;
-    [SerializeField] private bool testAnMung = false;
-    [SerializeField] private bool ChangeCamPlay = false;
-    [SerializeField] private bool ChangeCamloby_end = false;
-    #endregion
-
     #region properties
     [Header("Player properti")]
     [SerializeField] private FloatingJoystick floatingJoystick;
@@ -29,77 +14,19 @@ public class Player : Character
     private bool isPlay = false;
     #endregion
     //[SerializeField] private GameObject mySkin;
-    private void Test()
-    {
-        if(testInit)
-        {
-            Init();
-            testInit = false;
-            Invoke(nameof(Init), 5f);
-        }
-        if (testDie)
-        {
-            //Die(weaponController.currentWeapon, );
-            testDie = false;
-            Invoke(nameof(Init), 5f);
-        }
-        if (testShakeCamera)
-        {
-            ShakeCamera();
-            testShakeCamera = false;
-            Invoke(nameof(Init), 5f);
-        }
-        if (testZoomUp)
-        {
-            level += 2;
-            ZoomUpEffect();
-            testZoomUp = false;
-            //Invoke(nameof(Init), 5f);
-        }
-        if (testChangeSkin)
-        {
-            ChangeSkin(skinChangeID);
-            testChangeSkin = false;
-            Invoke(nameof(Init), 5f);
-        }
-        if (testChangeWepon)
-        {
-            ChangeWepon(weponChangeID);
-            testChangeWepon = false;
-            Invoke(nameof(Init), 5f);
-        }
-        if (testAnMung)
-        {
-            AnMung();
-            Observer.Noti(constr.CHANGE_CAMERA_LOBY_END);
-            testAnMung = false;
-            //Invoke(nameof(Init), 5f);
-        }
-        if (ChangeCamPlay)
-        {
-            Observer.Noti(constr.CHANGE_CAMERA_PLAY);
-            ChangeCamPlay = false;
-            //Invoke(nameof(Init), 5f);
-        }
-        if (ChangeCamloby_end)
-        {
-            Observer.Noti(constr.CHANGE_CAMERA_LOBY_END);
-            ChangeCamloby_end = false;
-            //Invoke(nameof(Init), 5f);
-        }
-    }
 
     protected override void Start()
     {
         base.Start();
         Init();
+        Observer.Noti(constr.CHANGEWEAPON);
+        Observer.Noti(constr.CHANGESKIN);
         Observer.AddListener(constr.ATTACK+ gameObject.GetHashCode(), ShakeCamera);
         Observer.AddListener(constr.DONELOADLEVEL, Init);
         Observer.AddListener(constr.WINGAME, AnMung);
     }
     private void FixedUpdate()
     {
-        Test();
         if (!isDie&& isPlay) OnControlPlayer();
     }
     protected override void Update()
@@ -210,6 +137,7 @@ public static class constr
     public static readonly string ONEMOREKILL= "OneMoreKill";
     public static readonly string LOSEGAME= "LoseGame";
     public static readonly string CHANGESKIN = "Change Skin";
+    public static readonly string CHANGEWEAPON = "Change Weapon";
     public static readonly string GETSHOPDATA = "Get Shop Data";
     public static readonly string SETSHOPDATA = "Set Shop Data";
 }

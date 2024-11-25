@@ -21,33 +21,23 @@ public class WeaponController : MonoBehaviour
     [SerializeField] private GameObject lookDirMace;
     [SerializeField] private GameObject lookDirAxe;
     [SerializeField] private GameObject lookDirHammer;
+    [SerializeField] private WeaponType weaponType;
+    [SerializeField] private int idWeapon;
 
-    private void Update()
+    private void Awake()
     {
-        if(testChangeWeapon1)
-        {
-            testChangeWeapon1 = false;
-            ChangeWeapon(1);
-        }
-        if (testChangeWeapon5)
-        {
-            testChangeWeapon5 = false;
-            ChangeWeapon(5);
-        }
-        if (testChangeWeapon15)
-        {
-            testChangeWeapon15 = false;
-            ChangeWeapon(15);
-        }
+        Observer.AddListener(constr.CHANGEWEAPON, ChangeWeapon);
     }
-    public void ChangeWeapon(int id)
+    private void ChangeWeapon()
     {
-        currentWeapon.gameObject.SetActive(false);
-        currentWeapon = listWeapon[id];
+        Debug.Log("changeWeapon");
+        idWeapon = DataRuntimeManager.Instance.dynamicData.GetIdWeapon();
+        if(currentWeapon!= null) currentWeapon.gameObject.SetActive(false);
+        currentWeapon = listWeapon[idWeapon];
         currentWeapon.gameObject.SetActive(true);
-        listWeapon[id].ChangeWeapon(this);
-    } 
-    public void ChangeWeapon(GameObject lookdir, GameObject positionhit, GameObject inpuenemy)
+        currentWeapon.GetComponent<Weapon>().ChangeWeapon(this);
+    }
+    public void SetComponentWeapon(GameObject lookdir, GameObject positionhit, GameObject inpuenemy)
     {
         if(isPlayer&& lookDir != null)
             lookDir.SetActive(false);
@@ -69,13 +59,13 @@ public class WeaponController : MonoBehaviour
     {
         switch (weaponType) {
             case WeaponType.Mace:
-                ChangeWeapon(lookDirMace, postionHitMace, inputEnemyMace);
+                SetComponentWeapon(lookDirMace, postionHitMace, inputEnemyMace);
                 break;
             case WeaponType.Axe:
-                ChangeWeapon(lookDirAxe, postionHitAxe, inputEnemyAxe);
+                SetComponentWeapon(lookDirAxe, postionHitAxe, inputEnemyAxe);
                 break;
             case WeaponType.Hammer:
-                ChangeWeapon(lookDirHammer, postionHitHammer, inputEnemyHammer);
+                SetComponentWeapon(lookDirHammer, postionHitHammer, inputEnemyHammer);
                 break;
         }
     }

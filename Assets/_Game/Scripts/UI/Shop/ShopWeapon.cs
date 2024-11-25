@@ -9,7 +9,6 @@ public class ShopWeapon : Shop
         {
             shopItems.Add(weaponShopSO.weaponShopItems[i]);
         }
-        Debug.Log("shopskin");
         currentIDSelect = DataRuntimeManager.Instance.dynamicData.GetIdWeapon();
         Debug.Log("current id select : "+ currentIDSelect);
         base.Init();
@@ -19,10 +18,15 @@ public class ShopWeapon : Shop
         base.OnclickButtonEquip();
 
         dynamicData.SetIdWeapon(currentIDSelect);
-        Observer.Noti(constr.CHANGESKIN);
+        Observer.Noti(constr.CHANGEWEAPON);
     }
     protected override void SetOpen()
     {
         DataRuntimeManager.Instance.shopData.SetOpenWeapon(currentIDSelect);
+    }
+    public override void AddItemShopWithType(int i, ref ShopUnit newShopItemUnit)
+    {
+        Debug.Log("add weapon");
+        newShopItemUnit.Init(shopItems[i], DataRuntimeManager.Instance.shopData.GetWeaponStatus(i), i, this, currentIDEquip == i);
     }
 }

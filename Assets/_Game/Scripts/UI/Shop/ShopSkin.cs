@@ -34,4 +34,9 @@ public class ShopSkin : Shop
     {
         DataRuntimeManager.Instance.shopData.SetOpenSkin(currentIDSelect);
     }
+    public override void AddItemShopWithType(int i, ref ShopUnit newShopItemUnit)
+    {
+        Debug.Log("add skin");
+        newShopItemUnit.Init(shopItems[i], DataRuntimeManager.Instance.shopData.GetSkinStatus(i), i, this, currentIDEquip == i);
+    }
 }
