@@ -55859,6 +55859,7 @@ MonoBehaviour:
   currentHammerAnimName: Idle
   myParticleSystem: {fileID: 3103203200600734844}
   character: {fileID: 1916066720057288282}
+  _character: {fileID: 0}
   colliderHashCode: 
 --- !u!1 &4827125870678949433
 GameObject:
@@ -76253,6 +76254,8 @@ MonoBehaviour:
   lookDirMace: {fileID: 6927718015569588055}
   lookDirAxe: {fileID: 5718491003152163868}
   lookDirHammer: {fileID: 3070564097908052749}
+  weaponType: 0
+  idWeapon: 0
 --- !u!1 &6863137748209226835
 GameObject:
   m_ObjectHideFlags: 0

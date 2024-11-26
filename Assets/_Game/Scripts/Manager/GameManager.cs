@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class GameManager : Singleton<GameManager>
 {
-    [SerializeField] private MapSO mapSO;
     private int numberOfEnemy= 20;
     private Map currentMap;
     private Player player;
@@ -34,12 +33,13 @@ public class GameManager : Singleton<GameManager>
     {
         InitGame();
     }
-    private void Update()
-    {
-        //Debug.Log(Time.deltaTime+ " ms , "+ 1f/Time.deltaTime+ " fps");
-    }
+    //private void Update()
+    //{
+    //    //Debug.Log(Time.deltaTime+ " ms , "+ 1f/Time.deltaTime+ " fps");
+    //}
     private void InitGame()
     {
+
         Observer.AddListener(constr.NEXTLEVEL, LoadNextLevel);
         Observer.AddListener(constr.RELOADLEVEL, ReLoadLevel);
         sceneToLoad.Add(SceneManager.LoadSceneAsync
@@ -57,7 +57,7 @@ public class GameManager : Singleton<GameManager>
         SceneManager.SetActiveScene(targetScene);
         EnemyManager.Instance.InitEnemy(numberOfEnemy);
         Observer.Noti(constr.DONELOADSCENEASYNC);
-        currentMap = Instantiate(mapSO.GetMapByID(idLevel));
+        currentMap = Instantiate(Resources.Load<GameObject>("Map" + idLevel)).GetComponent<Map>();
         Invoke(nameof(UnloadScene), 1f);
     }
     private void UnloadScene()
@@ -90,7 +90,7 @@ public class GameManager : Singleton<GameManager>
         while (!t.isDone) yield return null;
         Scene targetScene = SceneManager.GetSceneByName("Map " + idLevel.ToString());
         SceneManager.SetActiveScene(targetScene);
-        currentMap = Instantiate(mapSO.GetMapByID(idLevel));
+        currentMap = Instantiate(Resources.Load<GameObject>("Map" + idLevel)).GetComponent<Map>();
         UIManager.Instance.SetUIScene(UIManager.SceneUIType.Home);
         EnemyManager.Instance.InitEnemy(numberOfEnemy);
         Observer.Noti(constr.DONELOADLEVEL);

@@ -10,6 +10,10 @@ public class LoadSceneUI : MonoBehaviour
     [SerializeField] private Image dim2;
     [SerializeField] private TextMeshProUGUI textProcess;
     bool complete = false;
+    private void Awake()
+    {
+        Application.targetFrameRate = 60;
+    }
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
