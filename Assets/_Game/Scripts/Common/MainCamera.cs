@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 public class MainCamera : Singleton<MainCamera>
 {
     [SerializeField] private Character playerInstance;
+    public Camera _mainCamera;
     [SerializeField] private float paramForScale = 70f;
     [SerializeField] private Vector3 offsetOrigin = new Vector3(0,10,15);
     [SerializeField] private bool isBlendingPrevios = false;

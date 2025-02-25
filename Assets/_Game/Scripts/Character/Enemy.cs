@@ -11,9 +11,11 @@ public class Enemy : Character
     [SerializeField] public NavMeshAgent myAgent;
     private Istate currentState;
     private Vector3 originPos;
+    [SerializeField]private bool test = false;
 
     private void Awake()
     {
+        if (test) Init();
         originPos = transform.position;
     }
 
@@ -92,6 +94,19 @@ public class Enemy : Character
         {
             ChangeState(new AttackState());
         }
+    }
+    public void Setspeed(float speed)
+    {
+        moveSpeed = speed;
+        myAgent.speed = 0.01f;
+    }
+    public void SetSkin()
+    {
+        skinController.ChangeSkin();
+    }
+    public void SetWeapon()
+    {
+        //weaponController.ChangeWeapon();
     }
 }
 public enum CurrentEnemyState { PATROL, ATTACK, PURSUE,DIE, EVADE }

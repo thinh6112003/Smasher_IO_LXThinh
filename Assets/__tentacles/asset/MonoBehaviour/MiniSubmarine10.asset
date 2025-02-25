@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a5a4b417e320977920ee5edb87e616, type: 3}
+  m_Name: MiniSubmarine10
+  m_EditorClassIdentifier:
+  enemyPrefab:
+    m_AssetGUID: 62f5a3915c7134900a8bfcd7f9b8b10a
+    m_SubObjectName:
+    m_SubObjectType:
+  enemyType: 67
+  bossHuntType: 0
+  enemyLevel: 2
+  specialConfigs:
+    caughtDuration: 895.74
+    dropList: []
+    expValue: 0
+    capacityValue: 0
+  enemyArea: 0
+  enemySprite: {fileID: 21300000, guid: 40eab51c803d89d4aa1c03dacec946d3, type: 2}
+  isFlyEnemy: 1
+  isPowerReviewEnemy: 1
+  isUneffectedByTime: 0
+  isSpecialEnemy: 0
+  showLevelUpScreen: 0
+  needTentacleType: 0
+  bubbleParticleScaleAmount: 1.25
+  speedTransitionDuration: 0.1
+  speedTransitionEase: 4
+  patrolSpeedRange:
+    x: 1
+    y: 3
+  useSpecialEscapeSpeed: 0
+  escapeSpeedAmount: 3
+  dismissSpeed: 10
+  caughtReset: 2
+  enemyReactionType: 1
+  eatMoveSpeedMultiplier: 1
+  runMoveMaxSpeed: 6
+  runMoveLerpAmount: 0.8
+  isOwnRunRange: 0
+  runRange: 4
+  runTimeAfterAttack: 2
+  damage: 5
+  damageIncreaseRate: 0.1
+  damageIncreaseResetDuration: 0.1
+  waitingAfterDamage: 1
+  isOwnAttackRange: 0
+  attackRange: 4
+  nearAttackRange: 2
+  nearAttackMoveMaxSpeed: 10
+  nearAttackMoveLerpSpeed: 3
+  showExplosionValues: 0
+  explodeAfterSec: 3
+  explodeRadius: 3
+  explodeDamage: 30
+  isBoss: 0
+  bossType: 0
+  bossCatchRadius: 4
+  useTentacleCount: 2
+  bossCatchDamagePerEverySeconds: 2
+  playerMovementMultiplier: 1
+  enemyCatchingType: 0
+  minCatchDuration: 0.1
+  isRewardBarrelEnemy: 0

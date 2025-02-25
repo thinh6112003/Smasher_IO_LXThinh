@@ -28,10 +28,20 @@ public class WeaponController : MonoBehaviour
     {
         Observer.AddListener(constr.CHANGEWEAPON, ChangeWeapon);
     }
+    private void Start()
+    {
+        ChangeWeapon();
+    }
     private void ChangeWeapon()
     {
-        Debug.Log("changeWeapon");
-        idWeapon = DataRuntimeManager.Instance.dynamicData.GetIdWeapon();
+        if (isPlayer)
+        {
+            idWeapon = DataRuntimeManager.Instance.dynamicData.GetIdWeapon();
+        }
+        else
+        {
+            idWeapon = Random.Range(0, listWeapon.Count);
+        }
         if(currentWeapon!= null) currentWeapon.gameObject.SetActive(false);
         currentWeapon = listWeapon[idWeapon];
         currentWeapon.gameObject.SetActive(true);

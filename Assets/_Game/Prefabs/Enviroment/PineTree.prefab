@@ -3035,6 +3035,7 @@ GameObject:
   - component: {fileID: 65799334842562927}
   - component: {fileID: 136783189580811501}
   - component: {fileID: 65970168289057347}
+  - component: {fileID: 6753621869349565715}
   m_Layer: 6
   m_Name: Tree_5_High
   m_TagString: Decor
@@ -3173,3 +3174,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.8514617, y: 0.57121015, z: 0.86689854}
   m_Center: {x: 0.0046012104, y: 1.1728357, z: 0.013975143}
+--- !u!114 &6753621869349565715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998021400806445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

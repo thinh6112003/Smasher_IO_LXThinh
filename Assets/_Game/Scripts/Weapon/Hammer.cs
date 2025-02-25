@@ -3,11 +3,15 @@ using UnityEngine;
 
 public class Hammer : Weapon
 {
-    public override void AttackAnimation(Character character)
+    public override void AttackHandle(Character character)
     {
         character.SetAnimation(AnimationType.ATTACKHAMMER);
     }
-    public override void DeathAnimation(Character character, Transform enemyTf)
+    public override void AttackSound()
+    {
+        AudioManager.Instance.SetSound(AudioManager.SoundType.ButtonClick);
+    }
+    public override void DeathHandle(Character character, Transform enemyTf)
     {
         character.SetAnimation(AnimationType.DIE);
         character.parentModel.DOScale(character.flatScale, 0.5f);

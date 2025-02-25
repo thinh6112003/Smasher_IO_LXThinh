@@ -3,22 +3,16 @@ using UnityEngine;
 public class AudioManager : Singleton<AudioManager>
 {
     [Header("--- Audio Source ----------")]
-    public AudioSource musicSource;
     public AudioSource SoundSource;
 
     [Header("--- Audio Clip -----")]
-    public AudioClip backgroundMusic;
-    public AudioClip levelComplete;
     public AudioClip buttonClick;
-    public AudioClip layBrick;
-    public AudioClip pickBrick;
-    public AudioClip bridgeClear;
-    public AudioClip swipe;
-
-    void Start()
+    public AudioClip chet;
+    public AudioClip buaDap;
+    public AudioClip riuChem;
+    private void Start()
     {
-        //musicSource.clip = backgroundMusic;
-        //musicSource.Play();
+        DontDestroyOnLoad(gameObject);
     }
     public void PlaySFX(AudioClip clip)
     {
@@ -34,10 +28,6 @@ public class AudioManager : Singleton<AudioManager>
     {
         SoundSource.PlayOneShot(buttonClick);
     }
-    public void activeMusic()
-    {
-        musicSource.enabled = !musicSource.enabled;
-    }
     public void activeSound()
     {
         SoundSource.enabled = !SoundSource.enabled;
@@ -48,20 +38,14 @@ public class AudioManager : Singleton<AudioManager>
             case SoundType.ButtonClick:
                 PlayButtonClickSound();
                 break;
-            case SoundType.LayBrick:
-                PlaySFX(layBrick);
+            case SoundType.Chet:
+                PlaySFX(chet);
                 break;
-            case SoundType.PickBrick:
-                PlaySFX(pickBrick);
+            case SoundType.BuaDap:
+                PlaySFX(buaDap);
                 break;
-            case SoundType.BridgeClear:
-                PlaySFX(bridgeClear);
-                break;
-            case SoundType.Swipe:
-                PlaySFX(swipe);
-                break;
-            case SoundType.LevelComplete:
-                PlaySFX(levelComplete);
+            case SoundType.RiuChem:
+                PlaySFX(riuChem);
                 break;
         }
     }
@@ -73,22 +57,16 @@ public class AudioManager : Singleton<AudioManager>
             case SoundType.ButtonClick:
                 PlayButtonClickSound();
                 break;
-            case SoundType.LayBrick:
-                PlaySFX(layBrick, pitch);
+            case SoundType.Chet:
+                PlaySFX(chet, pitch);
                 break;
-            case SoundType.PickBrick:
-                PlaySFX(pickBrick, pitch);
+            case SoundType.BuaDap:
+                PlaySFX(buaDap, pitch);
                 break;
-            case SoundType.BridgeClear:
-                PlaySFX(bridgeClear, pitch);
-                break;
-            case SoundType.Swipe:
-                PlaySFX(swipe, pitch);
-                break;
-            case SoundType.LevelComplete:
-                PlaySFX(levelComplete, pitch);
+            case SoundType.RiuChem:
+                PlaySFX(riuChem, pitch);
                 break;
         }
     }
-    public enum SoundType { ButtonClick, LayBrick, PickBrick, BridgeClear, Swipe , LevelComplete};
+    public enum SoundType { ButtonClick, Chet, BuaDap, RiuChem};
 }

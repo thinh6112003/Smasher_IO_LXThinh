@@ -2,12 +2,11 @@ using UnityEngine;
 
 public class Mace : Weapon
 {
-    public override void AttackAnimation(Character character)
+    public override void AttackHandle(Character character)
     {
         character.SetAnimation(AnimationType.ATTACKMACE);
     }
-
-    public override void DeathAnimation(Character character, Transform enemyTf)
+    public override void DeathHandle(Character character, Transform enemyTf)
     {
         character.SetAnimation(AnimationType.DIEMACE);
         character.parentModel.LookAt(enemyTf);

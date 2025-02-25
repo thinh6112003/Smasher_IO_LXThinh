@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33477422987900198}
   - component: {fileID: 23837884980044851}
   - component: {fileID: 65186882808992922}
+  - component: {fileID: 5970756037976038931}
   m_Layer: 6
   m_Name: Shatter_Mesh_4
   m_TagString: Untagged
@@ -105,6 +106,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.280334, y: 2.0690567, z: 2}
   m_Center: {x: 0.0037006736, y: -0.0001847744, z: -0.000020772219}
+--- !u!114 &5970756037976038931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012638905271312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1021761653075994
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,6 +130,7 @@ GameObject:
   - component: {fileID: 33813194417501395}
   - component: {fileID: 23933744350356093}
   - component: {fileID: 65857147677291162}
+  - component: {fileID: 8241370423690147242}
   m_Layer: 6
   m_Name: Shatter_Mesh_3
   m_TagString: Untagged
@@ -210,6 +224,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.2796273, y: 2.2641215, z: 1.9999999}
   m_Center: {x: -0.003772676, y: 0.00021064281, z: -0.00005811453}
+--- !u!114 &8241370423690147242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021761653075994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1058502145717035
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,6 +285,7 @@ GameObject:
   - component: {fileID: 33846999539315771}
   - component: {fileID: 23785368286226673}
   - component: {fileID: 65316385778781257}
+  - component: {fileID: 923497196835150659}
   m_Layer: 6
   m_Name: stump 01(Clone)
   m_TagString: Decor
@@ -352,6 +379,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 13.16047, y: 3.2508385, z: 2.2967103}
   m_Center: {x: 0.028396606, y: 1.6337811, z: 0.148355}
+--- !u!114 &923497196835150659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088286711168956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1104902224841132
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,6 +403,7 @@ GameObject:
   - component: {fileID: 33370373417286956}
   - component: {fileID: 23493825118744592}
   - component: {fileID: 65318111744766723}
+  - component: {fileID: 914534103703324707}
   m_Layer: 6
   m_Name: Shatter_Mesh_2
   m_TagString: Untagged
@@ -457,6 +497,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.337081, y: 2.2641215, z: 2}
   m_Center: {x: -0.16833925, y: -0.044885635, z: -0.022831589}
+--- !u!114 &914534103703324707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104902224841132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1478638556124481
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,6 +850,7 @@ GameObject:
   - component: {fileID: 33002601373962247}
   - component: {fileID: 23674028402054798}
   - component: {fileID: 65318453617920236}
+  - component: {fileID: 7428058626044551642}
   m_Layer: 6
   m_Name: Shatter_Mesh_5
   m_TagString: Untagged
@@ -891,6 +944,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.2798371, y: 2.0690567, z: 2}
   m_Center: {x: 0.096824944, y: -0.017265439, z: -0.092403054}
+--- !u!114 &7428058626044551642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689450645010905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1722849612659830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,6 +1114,7 @@ GameObject:
   - component: {fileID: 33507870637826190}
   - component: {fileID: 23225343225353276}
   - component: {fileID: 65096709167758126}
+  - component: {fileID: 2993541848299963473}
   m_Layer: 6
   m_Name: Shatter_Mesh_1
   m_TagString: Untagged
@@ -1142,6 +1208,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.7117281, y: 1.2583685, z: 1.0094538}
   m_Center: {x: 0.05714321, y: -0.084094256, z: -0.12931393}
+--- !u!114 &2993541848299963473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764950865331453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1794695192679445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1154,6 +1232,7 @@ GameObject:
   - component: {fileID: 33634281240607927}
   - component: {fileID: 23315426837498974}
   - component: {fileID: 65010123135267847}
+  - component: {fileID: 4466769212770765387}
   m_Layer: 6
   m_Name: Shatter_Mesh_0
   m_TagString: Untagged
@@ -1247,6 +1326,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.7117281, y: 1.2077918, z: 0.7117281}
   m_Center: {x: 0.057142958, y: -0.021292001, z: -0.011866972}
+--- !u!114 &4466769212770765387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794695192679445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1941175341329626
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,8 +19,9 @@ public class PatrolState : Istate
 
     public void OnEnter(Enemy enemy)
     {
+        if (!enemy.isActiveAndEnabled) return;
         enemy.currentEnemyState = CurrentEnemyState.PATROL;
-        enemy.myAgent.isStopped = false;
+        if(enemy.myAgent.isActiveAndEnabled) enemy.myAgent.isStopped = false;
         mySelf = enemy;
         myAgent = enemy.myAgent;
         myAgent.destination = enemy.transform.position;
@@ -32,6 +33,7 @@ public class PatrolState : Istate
     }
     public void OnUpdate(Enemy enemy)
     {
+        if (!enemy.isActiveAndEnabled) return;
         enemy.SetAnimation(AnimationType.RUN);
         MoveRandom();
         FindEnemy();

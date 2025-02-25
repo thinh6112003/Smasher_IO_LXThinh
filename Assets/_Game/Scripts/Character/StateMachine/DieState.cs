@@ -5,7 +5,6 @@ public class DieState : Istate
 {
     void Istate.OnEnter(Enemy enemy)
     {
-        Debug.Log("die");
         Observer.Noti(constr.ONEMOREKILL);
         enemy.currentEnemyState = CurrentEnemyState.DIE;
         DOTween.Kill(enemy.transform);

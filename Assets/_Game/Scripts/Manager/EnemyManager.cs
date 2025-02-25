@@ -15,7 +15,6 @@ public class EnemyManager : Singleton<EnemyManager>
     }
     public async void InitEnemy(int numberOfEnemy)
     {
-        Debug.Log(" ============= so luong nenmy "+ numberOfEnemy.ToString());
         while(enemyList.Count < numberOfEnemy)
         {
             AddEnemy();
@@ -27,6 +26,9 @@ public class EnemyManager : Singleton<EnemyManager>
             if (i < numberOfEnemy)
             {
                 enemyList[i].SetInit();
+                enemyList[i].SetWeapon();
+                // -v- test
+                //enemyList[i].Setspeed(0.01f);
             }
         }
     }

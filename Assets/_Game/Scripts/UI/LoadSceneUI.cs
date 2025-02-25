@@ -23,6 +23,10 @@ public class LoadSceneUI : MonoBehaviour
         Observer.AddListener(constr.RELOADLEVEL,ChangeToHome);
         InitLoad();
     }
+    private void OnEnable()
+    {
+        textProcess.text = "0" + "%";
+    }
     private void ChangeToHome()
     {
         gameObject.SetActive(true);

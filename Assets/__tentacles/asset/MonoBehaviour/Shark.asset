@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a5a4b417e320977920ee5edb87e616, type: 3}
+  m_Name: Shark
+  m_EditorClassIdentifier:
+  enemyPrefab:
+    m_AssetGUID: c6946d0d13b8d4646b7390b99678a12c
+    m_SubObjectName:
+    m_SubObjectType:
+  enemyType: 44
+  bossHuntType: 0
+  enemyLevel: 4
+  specialConfigs:
+    caughtDuration: 6182.21
+    dropList:
+    - currencyType: 1
+      currencyValue: 12800
+    - currencyType: 3
+      currencyValue: 2
+    - currencyType: 6
+      currencyValue: 1
+    expValue: 251
+    capacityValue: 60
+  enemyArea: 0
+  enemySprite: {fileID: 21300000, guid: ae1cc3aaafda5ea48a837e50d1fddd97, type: 2}
+  isFlyEnemy: 0
+  isPowerReviewEnemy: 0
+  isUneffectedByTime: 0
+  isSpecialEnemy: 0
+  showLevelUpScreen: 1
+  needTentacleType: 0
+  bubbleParticleScaleAmount: 1.25
+  speedTransitionDuration: 0.1
+  speedTransitionEase: 4
+  patrolSpeedRange:
+    x: 2
+    y: 3
+  useSpecialEscapeSpeed: 0
+  escapeSpeedAmount: 3
+  dismissSpeed: 10
+  caughtReset: 2
+  enemyReactionType: 2
+  eatMoveSpeedMultiplier: 1
+  runMoveMaxSpeed: 14
+  runMoveLerpAmount: 5
+  isOwnRunRange: 0
+  runRange: 6
+  runTimeAfterAttack: 2
+  damage: 18
+  damageIncreaseRate: 0.1
+  damageIncreaseResetDuration: 0.1
+  waitingAfterDamage: 5
+  isOwnAttackRange: 1
+  attackRange: 12
+  nearAttackRange: 5
+  nearAttackMoveMaxSpeed: 19
+  nearAttackMoveLerpSpeed: 10
+  showExplosionValues: 0
+  explodeAfterSec: 3
+  explodeRadius: 3
+  explodeDamage: 30
+  isBoss: 0
+  bossType: 0
+  bossCatchRadius: 4
+  useTentacleCount: 2
+  bossCatchDamagePerEverySeconds: 2
+  playerMovementMultiplier: 1
+  enemyCatchingType: 0
+  minCatchDuration: 0.1
+  isRewardBarrelEnemy: 0

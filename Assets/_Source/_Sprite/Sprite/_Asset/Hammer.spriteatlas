@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hammer
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 65
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 2fec641db007974429a488fee31a2187, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - ccdfc911a646a694e99f6155158d53f2: 21300000
+    - 42993c11752af1b44917b4fa44a4e616: 21300000
+    - 74f1053128aafe94284debf3a0d6b460: 21300000
+    - 828d61517e7159e42a9dcf987d9d5c31: 21300000
+    - 1d2a050373643c74d9196baf740e9540: 21300000
+    - ac965943d34ec7648a3b6177bbfd42b8: 21300000
+    - a8efcd54be5d3f34faf04e145297e72e: 21300000
+    - d2a39574695c070488334419a010b383: 21300000
+    - 98d01515c6d060745a09c04cf2ca92ad: 21300000
+    - 645c60251739d2e4087f08b831081073: 21300000
+    - cba69e65bc4d34244b3faff0e1a88c67: 21300000
+    - fb3bbef5307db544c89a8556019539a1: 21300000
+    - 33471ab6045c25e4cb0f65589bcd5dbb: 21300000
+    - 820342992a50f154ba8cb67a700fcaed: 21300000
+    - d735a85a1f02ef74d94c6aa777eff978: 21300000
+    - c2027e2bb8f86304e941fdcc0d8412da: 21300000
+    - 60ea5dabd44f35d4cbf67f625a92bb2c: 21300000
+    - 963cd5fd274eb174d81fd7a1d1f22e43: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: ccdfc911a646a694e99f6155158d53f2, type: 3}
+  - {fileID: 21300000, guid: 42993c11752af1b44917b4fa44a4e616, type: 3}
+  - {fileID: 21300000, guid: 74f1053128aafe94284debf3a0d6b460, type: 3}
+  - {fileID: 21300000, guid: 828d61517e7159e42a9dcf987d9d5c31, type: 3}
+  - {fileID: 21300000, guid: 1d2a050373643c74d9196baf740e9540, type: 3}
+  - {fileID: 21300000, guid: ac965943d34ec7648a3b6177bbfd42b8, type: 3}
+  - {fileID: 21300000, guid: a8efcd54be5d3f34faf04e145297e72e, type: 3}
+  - {fileID: 21300000, guid: d2a39574695c070488334419a010b383, type: 3}
+  - {fileID: 21300000, guid: 98d01515c6d060745a09c04cf2ca92ad, type: 3}
+  - {fileID: 21300000, guid: 645c60251739d2e4087f08b831081073, type: 3}
+  - {fileID: 21300000, guid: cba69e65bc4d34244b3faff0e1a88c67, type: 3}
+  - {fileID: 21300000, guid: fb3bbef5307db544c89a8556019539a1, type: 3}
+  - {fileID: 21300000, guid: 33471ab6045c25e4cb0f65589bcd5dbb, type: 3}
+  - {fileID: 21300000, guid: 820342992a50f154ba8cb67a700fcaed, type: 3}
+  - {fileID: 21300000, guid: d735a85a1f02ef74d94c6aa777eff978, type: 3}
+  - {fileID: 21300000, guid: c2027e2bb8f86304e941fdcc0d8412da, type: 3}
+  - {fileID: 21300000, guid: 60ea5dabd44f35d4cbf67f625a92bb2c, type: 3}
+  - {fileID: 21300000, guid: 963cd5fd274eb174d81fd7a1d1f22e43, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - hammer1h
+  - hammer7h
+  - hammer6h
+  - hammer9h
+  - hammer4h
+  - hammer9
+  - hammer3h
+  - hammer3
+  - hammer6
+  - hammer2h
+  - hammer5h
+  - hammer8h
+  - hammer4
+  - hammer1
+  - hammer7
+  - hammer8
+  - hammer2
+  - hammer5
+  m_RenderDataMap: {}
+  m_Tag: Hammer
+  m_IsVariant: 0

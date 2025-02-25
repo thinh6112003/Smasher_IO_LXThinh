@@ -21,7 +21,6 @@ public class GameManager : Singleton<GameManager>
     private void UpdateNumberOfEnemy()
     {
         numberOfEnemy--;
-        Debug.Log("one more kill");
         UIManager.Instance.UpdateProcess();
         if (numberOfEnemy == 0) 
         {

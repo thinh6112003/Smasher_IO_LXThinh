@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33640381152978876}
   - component: {fileID: 23278345723840519}
   - component: {fileID: 65948082634298384}
+  - component: {fileID: 184872795110887950}
   m_Layer: 13
   m_Name: Shatter_Mesh_2
   m_TagString: Untagged
@@ -105,6 +106,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.5428257, y: 4.9958878, z: 4.7417765}
   m_Center: {x: 0.0012916327, y: 2.0123534, z: -0.007619977}
+--- !u!114 &184872795110887950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021628792810693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1040687295736633
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,6 +349,7 @@ GameObject:
   - component: {fileID: 33758073612120086}
   - component: {fileID: 23528557183982803}
   - component: {fileID: 65434507629767624}
+  - component: {fileID: 5167027119853177007}
   m_Layer: 13
   m_Name: Shatter_Mesh_1
   m_TagString: Untagged
@@ -429,6 +443,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.6808095, y: 3.1970096, z: 3.842009}
   m_Center: {x: 0.0023280382, y: 1.2835829, z: -0.0011048913}
+--- !u!114 &5167027119853177007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348430338156139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1401247209523323
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,6 +577,7 @@ GameObject:
   - component: {fileID: 33270155442561641}
   - component: {fileID: 23065367120833512}
   - component: {fileID: 65573153225959339}
+  - component: {fileID: 2483448646437626437}
   m_Layer: 13
   m_Name: Shatter_Mesh_0
   m_TagString: Untagged
@@ -644,6 +671,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.80104, y: 2.44281, z: 2.9237103}
   m_Center: {x: 0.0014681816, y: 0.95276165, z: -0.004810393}
+--- !u!114 &2483448646437626437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446074271012351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1669794239772887
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +730,7 @@ GameObject:
   - component: {fileID: 33868889507153969}
   - component: {fileID: 23867379268426897}
   - component: {fileID: 65125196016913582}
+  - component: {fileID: 1794709817994168827}
   m_Layer: 0
   m_Name: Winter_trees02(Clone)
   m_TagString: Decor
@@ -784,6 +824,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.5428257, y: 8.2409525, z: 4.7417765}
   m_Center: {x: -0.025241017, y: 4.1078687, z: -0.11160922}
+--- !u!114 &1794709817994168827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867719971053300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1964814303838993
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,6 +921,7 @@ GameObject:
   - component: {fileID: 33132334297592681}
   - component: {fileID: 23607365668908932}
   - component: {fileID: 65311708168692564}
+  - component: {fileID: 98343918414032433}
   m_Layer: 13
   m_Name: Shatter_Mesh_3
   m_TagString: Untagged
@@ -962,3 +1015,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.6525216, y: 6.529199, z: 1.6525216}
   m_Center: {x: 0, y: 2.5112078, z: 0}
+--- !u!114 &98343918414032433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1988540905553039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

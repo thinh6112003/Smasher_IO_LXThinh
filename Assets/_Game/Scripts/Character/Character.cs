@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using DG.Tweening;
 using System.Threading.Tasks;
+using HighlightPlus;
 
 public class Character : MonoBehaviour
 {
@@ -25,12 +26,17 @@ public class Character : MonoBehaviour
     [SerializeField] protected Transform Hammer;
     [SerializeField] protected GameObject inputEnemy;
     [SerializeField] protected WeaponController weaponController;
+    [SerializeField] protected SkinController skinController;
     protected bool isRun = false;
     protected string currentCharacterAnimName = constr.IDLE;
     protected string currentDeadZoneNotiString = "";
     protected Vector3 localPosModel_Die= new Vector3(0f, 0.08f, 0f);
     protected Vector3 localPosModel_Live= new Vector3(0f, 0.05f, 0f);
     protected CharacterAction lastCharAction= CharacterAction.IDLE;
+    protected HighlightEffect myhighlightEffect;
+    Vector3 scale1_15 = new Vector3(1.15f,1.15f,1.15f);
+    Vector3 scale0_9 = new Vector3(0.9f, 0.9f, 0.9f);
+    Vector3 scalezero = new Vector3(0.005f, 0.005f, 0.005f);
     protected virtual void OnMove()
     {
     }
@@ -39,6 +45,7 @@ public class Character : MonoBehaviour
         inputEnemy.SetActive(false);
         Observer.AddListener(constr.ATTACK + gameObject.GetHashCode(), ActiveInputEnemy);
         weaponController.SetWeapon(WeaponController.WeaponType.Axe);
+        myhighlightEffect = GetComponent<HighlightEffect>();
     }
     protected virtual void Update()
     {
@@ -75,7 +82,7 @@ public class Character : MonoBehaviour
         {
             isRun = false;
             lastCharAction = CharacterAction.ATTACK;
-            weaponController.currentWeapon.AttackAnimation(this);
+            weaponController.currentWeapon.AttackHandle(this);
             Observer.AddListener(constr.IDLE + gameObject.GetHashCode(), resetMove);
         }
     }
@@ -87,7 +94,7 @@ public class Character : MonoBehaviour
     }
     protected virtual async void Die(Weapon weaponhit,Transform enemyTf)
     {
-        weaponhit.DeathAnimation(this,enemyTf);
+        weaponhit.DeathHandle(this,enemyTf);
         myParticleSystem.SetActive(true);
         Hammer.gameObject.SetActive(false);
         parentModel.transform.localPosition = localPosModel_Die;
@@ -95,22 +102,23 @@ public class Character : MonoBehaviour
         myRigidbody.isKinematic = true;
         isDie = true;
         await Task.Delay(2000);
-        parentModel.DOScale(new Vector3(0, 0, 0), 1.4f).SetEase(Ease.InBack);
+        parentModel.DOScale(scalezero, 1.4f).SetEase(Ease.InBack);
     }
     protected virtual async void ZoomUpEffect()
     {
         await Task.Delay(350);
+        myhighlightEffect.HitFX();
         Observer.Noti(constr.LEVELUP);
         CountInDeadZone = 0;
         scaleValue = ((float)level - 1) / paramForZoom + 1f;
         scaleSpeed = ((float)level - 1) / paramForScaleSpeed + 1f;
-        transform.DOScale(scaleValue * new Vector3(1.15f,1.15f,1.15f), 0.2f)
+        transform.DOScale(scaleValue * scale1_15, 0.2f)
             .SetEase(Ease.OutSine)
             .OnComplete(() => {
                 /// fixx
-                transform.DOScale(scaleValue * new Vector3(0.9f, 0.9f, 0.9f), 0.15f).SetEase(Ease.InOutSine).OnComplete(() =>
+                transform.DOScale(scaleValue * scale0_9, 0.15f).SetEase(Ease.InOutSine).OnComplete(() =>
                 {
-                    transform.DOScale(scaleValue * new Vector3(1f, 1f, 1f), 0.15f).SetEase(Ease.OutSine);
+                    transform.DOScale(scaleValue * Vector3.one, 0.15f).SetEase(Ease.OutSine);
                 });
             });
     }
@@ -122,21 +130,10 @@ public class Character : MonoBehaviour
         lastCharAction = CharacterAction.RUN;
         SetAnimation(AnimationType.RUN);
         transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(moveVector), 0.3f);
-        if (!tmp&& currentCharacterAnimName== constr.TOIDLE) {
-            StartCoroutine(setRun()); 
-        }
-    }
-    IEnumerator setRun()
-    {
-        yield return new WaitForSeconds(0.21f);
-        SetAnimation(AnimationType.RUN);
-        currentCharacterAnimName = constr.IDLE;
-        StopCoroutine(setRun());
     }
     public void resetMove()
     {
-        if (isDie||isRun) return;
-        SetAnimation(AnimationType.TOIDLE);
+        SetAnimation(AnimationType.IDLE);
     }
     public void ChangeSkin(int id)
     {
@@ -169,13 +166,15 @@ public class Character : MonoBehaviour
                 ChangeAnim(constr.ATTACKMACE);
                 break;
             case AnimationType.IDLE:
-                ChangeAnim(constr.IDLE);
+                animCharacter.SetFloat("MoveBase", 0);
+                ChangeAnim(constr.RUN_IDLE);
                 break;
             case AnimationType.DIEMACE:
                 ChangeAnim(constr.DIEMACE);
                 break;
             case AnimationType.RUN:
-                ChangeAnim(constr.RUN);
+                animCharacter.SetFloat("MoveBase", 1);
+                ChangeAnim(constr.RUN_IDLE);
                 break;
             case AnimationType.DIE:
                 ChangeAnim(constr.DIE);
@@ -184,7 +183,8 @@ public class Character : MonoBehaviour
                 ChangeAnim(constr.ANMUNG);
                 break;
             case AnimationType.TOIDLE:
-                ChangeAnim(constr.TOIDLE);
+                animCharacter.SetFloat("MoveBase", 0);
+                ChangeAnim(constr.RUN_IDLE);
                 break;
         }
     }

@@ -11,19 +11,27 @@ public class Player : Character
     [SerializeField] private GameObject dustrail;
     [SerializeField] private GameObject LookDir;
     [SerializeField] private CinemachineImpulseSource impulseSource;
+    [SerializeField] private GameObject siuuuu;
+    
     private bool isPlay = false;
+    public static Character _intance;
     #endregion
     //[SerializeField] private GameObject mySkin;
+    private void Awake()
+    {
 
+        Observer.AddListener(constr.ATTACK + gameObject.GetHashCode(), ShakeCamera);
+        Observer.AddListener(constr.DONELOADLEVEL, Init);
+        Observer.AddListener(constr.WINGAME, AnMung);
+    }
     protected override void Start()
     {
+        isPlay = true;
+        _intance = this;
         base.Start();
         Init();
         Observer.Noti(constr.CHANGEWEAPON);
         Observer.Noti(constr.CHANGESKIN);
-        Observer.AddListener(constr.ATTACK+ gameObject.GetHashCode(), ShakeCamera);
-        Observer.AddListener(constr.DONELOADLEVEL, Init);
-        Observer.AddListener(constr.WINGAME, AnMung);
     }
     private void FixedUpdate()
     {
@@ -35,10 +43,16 @@ public class Player : Character
     }
     protected override void Init()
     {
-        Observer.AddListener(constr.DONECHANGECAM, ()=>isPlay = true);
+        Observer.AddListener(constr.DONECHANGECAM, ()=>SetControlPlayer(true));
+        Observer.AddListener(constr.WINGAME, () => SetControlPlayer(false));
         base.Init();
         LookDir.SetActive(true);
         transform.position = Vector3.zero;
+    }
+    void SetControlPlayer(bool status)
+    {
+        isPlay = status;
+        floatingJoystick.gameObject.SetActive(status);
     }
     protected override void Die(Weapon weaponhit, Transform enemyTf)
     {
@@ -70,12 +84,22 @@ public class Player : Character
 
         if (moveVector.sqrMagnitude > 0.0001f) 
         {
+
+            animCharacter.SetFloat(constr.MOVEBASE, 1);
             Run(moveVector.normalized*moveSpeed* scaleSpeed * Time.fixedDeltaTime);
         }
         else
         {
+            currentCharacterAnimName = constr.IDLE;
+            animCharacter.SetFloat(constr.MOVEBASE, 0);
             Attack();
         }
+    }
+    protected override void ZoomUpEffect()
+    {
+        base.ZoomUpEffect();
+        Debug.Log("ZoomUpEffect"); 
+        siuuuu.SetActive(true);
     }
     private void ShakeCamera()
     {
@@ -107,9 +131,11 @@ public static class constr
     public static readonly string TOIDLE = "ToIdle";
     public static readonly string IDLE = "Idle";
     public static readonly string RUN = "Run";
+    public static readonly string RUN_IDLE = "Run_idle";
     public static readonly string DIE = "Die";
     public static readonly string DIEMACE = "DieMace";
     public static readonly string ATTACKHAMMER = "AttackHammer";
+    public static readonly string MOVEBASE = "MoveBase";
     public static readonly string ATTACK = "Attack";
     public static readonly string ATTACKMACE = "AttackMace";
     public static readonly string ATTACKAXE = "AttackAxe";

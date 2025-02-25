@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class DataRuntimeManager : KBTemplate.Patterns.Singleton.Singleton<DataRuntimeManager>
 {
@@ -9,6 +10,8 @@ public class DataRuntimeManager : KBTemplate.Patterns.Singleton.Singleton<DataRu
     [SerializeField] private SaveGameSO defaultSaveGameFile;
     public DynamicData dynamicData { get; private set; }
     public ShopData shopData { get; private set; }
+    public bool vibrationStatus = true;
+    public bool soundStatus = true;
     public override void OnCreatedSingleton()
     {
         base.OnCreatedSingleton();
@@ -19,6 +22,7 @@ public class DataRuntimeManager : KBTemplate.Patterns.Singleton.Singleton<DataRu
     {
         LoadShopDataRuntime();
         LoadDynamicDataRuntime();
+        Observer.AddListener(constr.WINGAME, FinishGame);
     }
 
     #region shop data
@@ -65,4 +69,9 @@ public class DataRuntimeManager : KBTemplate.Patterns.Singleton.Singleton<DataRu
             SaveDataRuntime();
         }
     }
+    private void FinishGame()
+    {
+        dynamicData.NextCurrentIDLevel();
+    }
+
 }

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c94cc9f15e2a2db0e1adf7546dcb4a, type: 3}
+  m_Name: BossUIIconDataSO
+  m_EditorClassIdentifier:
+  bossUIIconDataList:
+  - bossType: 92
+    icon: {fileID: 21300000, guid: 122da6b06f00c66439b2d02bb78bebe9, type: 2}
+    name: OctoBoss
+  - bossType: 148
+    icon: {fileID: 21300000, guid: a9d3ef21321018f4693c90caf0343898, type: 2}
+    name: DeepZilla
+  - bossType: 149
+    icon: {fileID: 21300000, guid: 315f5308d76b7bd4eb00be6c75e061c5, type: 2}
+    name: GreenZilla
+  - bossType: 150
+    icon: {fileID: 21300000, guid: d2dba9e5e801d6e4b881d81b815fc56e, type: 2}
+    name: RedZilla

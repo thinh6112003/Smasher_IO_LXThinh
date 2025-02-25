@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a5a4b417e320977920ee5edb87e616, type: 3}
+  m_Name: Anchor
+  m_EditorClassIdentifier:
+  enemyPrefab:
+    m_AssetGUID: b624867544cdec34ea28b2e378a5cb74
+    m_SubObjectName:
+    m_SubObjectType:
+  enemyType: 91
+  bossHuntType: 0
+  enemyLevel: 0
+  specialConfigs:
+    caughtDuration: 40
+    dropList: []
+    expValue: 0
+    capacityValue: 0
+  enemyArea: 0
+  enemySprite: {fileID: 21300000, guid: 26f629def4dbe034abdb95934e97e4e5, type: 2}
+  isFlyEnemy: 1
+  isPowerReviewEnemy: 0
+  isUneffectedByTime: 1
+  isSpecialEnemy: 0
+  showLevelUpScreen: 0
+  needTentacleType: 0
+  bubbleParticleScaleAmount: 1.25
+  speedTransitionDuration: 0
+  speedTransitionEase: 4
+  patrolSpeedRange:
+    x: 0
+    y: 0
+  useSpecialEscapeSpeed: 1
+  escapeSpeedAmount: 0
+  dismissSpeed: 0
+  caughtReset: 0
+  enemyReactionType: 0
+  eatMoveSpeedMultiplier: 0
+  runMoveMaxSpeed: 4
+  runMoveLerpAmount: 0.6
+  isOwnRunRange: 0
+  runRange: 4
+  runTimeAfterAttack: 2
+  damage: 5
+  damageIncreaseRate: 0.1
+  damageIncreaseResetDuration: 0.1
+  waitingAfterDamage: 4
+  isOwnAttackRange: 1
+  attackRange: 10
+  nearAttackRange: 2
+  nearAttackMoveMaxSpeed: 10
+  nearAttackMoveLerpSpeed: 3
+  showExplosionValues: 0
+  explodeAfterSec: 3
+  explodeRadius: 3
+  explodeDamage: 30
+  isBoss: 0
+  bossType: 0
+  bossCatchRadius: 4
+  useTentacleCount: 2
+  bossCatchDamagePerEverySeconds: 2
+  playerMovementMultiplier: 1
+  enemyCatchingType: 0
+  minCatchDuration: 0.1
+  isRewardBarrelEnemy: 0

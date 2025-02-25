@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 33646802287387117}
   - component: {fileID: 23734049007193141}
   - component: {fileID: 65721936290342941}
+  - component: {fileID: 2273472406469141906}
   m_Layer: 6
   m_Name: Shatter_Mesh_2
   m_TagString: Untagged
@@ -219,6 +220,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.6400352, y: 3.317341, z: 2.6400354}
   m_Center: {x: -0.029086173, y: -0.71262467, z: -0.10961807}
+--- !u!114 &2273472406469141906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228969990103367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1389205031536615
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,6 +244,7 @@ GameObject:
   - component: {fileID: 33367500877076195}
   - component: {fileID: 23594777299786804}
   - component: {fileID: 65061263202520221}
+  - component: {fileID: 2981085787765815063}
   m_Layer: 6
   m_Name: mashroom(Clone)
   m_TagString: Decor
@@ -324,6 +338,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.426335, y: 3.6434512, z: 3.4275079}
   m_Center: {x: 0.10275173, y: 1.813426, z: 0.062475026}
+--- !u!114 &2981085787765815063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389205031536615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1390221844653115
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +466,7 @@ GameObject:
   - component: {fileID: 33458744658984769}
   - component: {fileID: 23378445569591197}
   - component: {fileID: 65602862842298651}
+  - component: {fileID: 5291512483412459462}
   m_Layer: 6
   m_Name: Shatter_Mesh_1
   m_TagString: Untagged
@@ -533,6 +560,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.7938483, y: 2.0327153, z: 1.8122408}
   m_Center: {x: 0.051355243, y: -0.37409806, z: -0.061825603}
+--- !u!114 &5291512483412459462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502212752638712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1572348551563710
 GameObject:
   m_ObjectHideFlags: 0
@@ -691,6 +730,7 @@ GameObject:
   - component: {fileID: 33033567962345685}
   - component: {fileID: 23609824914928137}
   - component: {fileID: 65977224132764663}
+  - component: {fileID: 735771150830293881}
   m_Layer: 6
   m_Name: Shatter_Mesh_3
   m_TagString: Untagged
@@ -784,6 +824,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.0745916, y: 0.7493775, z: 3.0745916}
   m_Center: {x: -0.000000059604645, y: 0.016277313, z: 0.00000011920929}
+--- !u!114 &735771150830293881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722976529112200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1723863352600913
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,6 +921,7 @@ GameObject:
   - component: {fileID: 33799991992915491}
   - component: {fileID: 23943114005164762}
   - component: {fileID: 65273858296895931}
+  - component: {fileID: 7260432044509933286}
   m_Layer: 6
   m_Name: Shatter_Mesh_0
   m_TagString: Untagged
@@ -962,3 +1015,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.8124189, y: 1.9348209, z: 1.7344757}
   m_Center: {x: -0.019319504, y: -0.39066672, z: -0.010046661}
+--- !u!114 &7260432044509933286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829721310972823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0d7010b7dee5ba43bd32128d60fd678, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

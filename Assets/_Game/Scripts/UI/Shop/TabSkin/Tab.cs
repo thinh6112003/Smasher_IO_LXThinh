@@ -1,12 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
 public class Tab : MonoBehaviour
 {
     [SerializeField] private Image buttonImage;
     [SerializeField] private TextMeshProUGUI buttonText;
-    Color tmpColor;
+    Color textColor;
+    Color imageColor;
 
     public void OnEnable()
     {
@@ -18,8 +20,9 @@ public class Tab : MonoBehaviour
     }
     public void RevertColor()
     {
-        tmpColor = buttonImage.color;
-        buttonImage.color = buttonText.color;
-        buttonText.color = tmpColor;
+        imageColor = buttonImage.color;
+        textColor = buttonText.color;
+        buttonImage.DOColor(textColor, 0.22f);
+        buttonText.DOColor(imageColor, 0.22f);
     }
 }

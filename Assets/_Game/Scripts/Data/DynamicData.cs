@@ -57,7 +57,6 @@ public class DynamicData
     }
     public void SubtractMonney(int amount)
     {
-        Debug.Log("subtrack monney" + amount + "  " + currentMonney);
         currentMonney -= amount;
         Observer.Noti(constr.UPDATEUI);
     }

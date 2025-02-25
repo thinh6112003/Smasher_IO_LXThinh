@@ -15,6 +15,7 @@ public abstract class Shop : MonoBehaviour
     [SerializeField] protected RectTransform rareContentRectTf;
     [SerializeField] protected RectTransform commonContentRectTf;
     [SerializeField] protected RectTransform epicContentRectTf;
+    [SerializeField] protected Button buttonBack;
     [SerializeField] protected Button buttonRare;
     [SerializeField] protected Button buttonCommon;
     [SerializeField] protected Button buttonEpic;
@@ -47,7 +48,7 @@ public abstract class Shop : MonoBehaviour
     protected List<ShopUnit> listItemCurrent = new List<ShopUnit>();
     protected DynamicData dynamicData;
 
-    protected void Start()
+    protected virtual void Start()
     {
         buttonUnlockRandom.onClick.AddListener(OnclickButtonUnlockRandom);
         buttonEquiep_Equip.onClick.AddListener(OnclickButtonEquip);
@@ -56,7 +57,7 @@ public abstract class Shop : MonoBehaviour
         buttonRare.onClick.AddListener(OnclickButtonRare);
         Init();
     }
-    protected void OnEnable()
+    protected virtual void OnEnable()
     {
         if (currentIDSelect != -1)
         {
@@ -76,7 +77,6 @@ public abstract class Shop : MonoBehaviour
     protected virtual void Init()
     {
         dynamicData = DataRuntimeManager.Instance.dynamicData;
-        Debug.Log("id :"+dynamicData.GetIdWeapon());
         ChangeTab(shopItems[currentIDSelect].type);
         currentIDEquip = currentIDSelect;
         for (int i = 0; i < shopItems.Count; i++)

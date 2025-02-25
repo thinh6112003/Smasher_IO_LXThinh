@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a5a4b417e320977920ee5edb87e616, type: 3}
+  m_Name: NeonJellyFish
+  m_EditorClassIdentifier:
+  enemyPrefab:
+    m_AssetGUID: 1c60504b1a4f24cd98aecd41e7606364
+    m_SubObjectName:
+    m_SubObjectType:
+  enemyType: 94
+  bossHuntType: 0
+  enemyLevel: 8
+  specialConfigs:
+    caughtDuration: 292968
+    dropList:
+    - currencyType: 1
+      currencyValue: 1118000
+    - currencyType: 54
+      currencyValue: 335
+    expValue: 8125
+    capacityValue: 71
+  enemyArea: 1
+  enemySprite: {fileID: 21300000, guid: 1eac26ee54d230f42bff56e36775adfb, type: 2}
+  isFlyEnemy: 0
+  isPowerReviewEnemy: 0
+  isUneffectedByTime: 0
+  isSpecialEnemy: 0
+  showLevelUpScreen: 1
+  needTentacleType: 0
+  bubbleParticleScaleAmount: 2
+  speedTransitionDuration: 0.1
+  speedTransitionEase: 4
+  patrolSpeedRange:
+    x: 1
+    y: 4
+  useSpecialEscapeSpeed: 0
+  escapeSpeedAmount: 3
+  dismissSpeed: 10
+  caughtReset: 2
+  enemyReactionType: 0
+  eatMoveSpeedMultiplier: 1
+  runMoveMaxSpeed: 2
+  runMoveLerpAmount: 0.6
+  isOwnRunRange: 0
+  runRange: 6
+  runTimeAfterAttack: 2
+  damage: 5
+  damageIncreaseRate: 0.1
+  damageIncreaseResetDuration: 0.1
+  waitingAfterDamage: 1
+  isOwnAttackRange: 0
+  attackRange: 4
+  nearAttackRange: 2
+  nearAttackMoveMaxSpeed: 10
+  nearAttackMoveLerpSpeed: 3
+  showExplosionValues: 0
+  explodeAfterSec: 3
+  explodeRadius: 3
+  explodeDamage: 30
+  isBoss: 0
+  bossType: 0
+  bossCatchRadius: 4
+  useTentacleCount: 2
+  bossCatchDamagePerEverySeconds: 2
+  playerMovementMultiplier: 1
+  enemyCatchingType: 0
+  minCatchDuration: 0.1
+  isRewardBarrelEnemy: 0

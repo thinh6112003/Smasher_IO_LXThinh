@@ -18,8 +18,8 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private Button slotButton;
     [SerializeField] private Button biggerButton;
     [SerializeField] private Button nextButton;
-    [SerializeField] private Button backHomeButton1;
-    [SerializeField] private Button backHomeButton2;
+    [SerializeField] private Button backHomeButton1; // skin
+    [SerializeField] private Button backHomeButton2; // weapon
     [SerializeField] private Button backHomeButtonSetting;
     [SerializeField] private Button backHomeButtonSlot;
     [SerializeField] private GameObject homeSceneUI;
@@ -52,14 +52,13 @@ public class UIManager : Singleton<UIManager>
         biggerButton.onClick.AddListener(OnClickBiggerButton);
         skinButton.onClick.AddListener(OnClickSkinButton);
         weaponButton.onClick.AddListener(OnClickWeaponButton);
-        backHomeButton1.onClick.AddListener(OnClickBackHomeButton);
-        backHomeButton2.onClick.AddListener(OnClickBackHomeButton);
         backHomeButtonSetting.onClick.AddListener(OnClickBackHomeSetting);
         backHomeButtonSlot.onClick.AddListener(OnClickBackHomeSlot);
         Observer.AddListener(constr.WINGAME, SetWinLevel);
         Observer.AddListener(constr.LOSEGAME, SetLoseLevel);
         Observer.AddListener(constr.UPDATEUI, UpdateTxtUI);
         Observer.AddListener(constr.DONELOADLEVEL, () => {
+            UpdateTxtUI(); 
             SetUIScene(SceneUIType.Home);
         });
         UpdateTxtUI();
@@ -72,23 +71,15 @@ public class UIManager : Singleton<UIManager>
 
     private void OnClickBackHomeSetting()
     {
-        settingPopup.SetActive(false);
-    }
-
-    private void OnClickBackHomeButton()
-    {
-        //AudioManager.Instance.SetSound(AudioManager.SoundType.ButtonClick);
-        SetUIScene(SceneUIType.Home);
+        settingPopup.GetComponent<Setting>().Hide() ;
     }
     private void OnClickWeaponButton()
     {
-        //AudioManager.Instance.SetSound(AudioManager.SoundType.ButtonClick);
-        SetUIScene(SceneUIType.ShopWeapon);
+        HomeUI.Instance.CloseHomeUITo(SceneUIType.ShopWeapon);
     }
     private void OnClickSkinButton()
     {
-        //AudioManager.Instance.SetSound(AudioManager.SoundType.ButtonClick);
-        SetUIScene(SceneUIType.ShopSkin);
+        HomeUI.Instance.CloseHomeUITo(SceneUIType.ShopSkin);
     }
     private void OnClickBiggerButton()
     {
@@ -126,8 +117,13 @@ public class UIManager : Singleton<UIManager>
     public void UpdateProcess()
     {
         killProgress
-            .DOFillAmount((20f - GameManager.Instance.GetNumberOfEnemy()) / 20f, 0.1f)
-            .SetEase(Ease.Linear);
+            .DOFillAmount((20f - GameManager.Instance.GetNumberOfEnemy()) / 20f, 0.15f)
+            .SetEase(Ease.OutBack)
+            .SetDelay(0.3f);
+        countEnemy.transform.DOScale(new Vector3(1.2f, 1.2f, 1.2f), 0.075f).OnComplete(() =>
+        {
+            countEnemy.transform.DOScale(new Vector3(1f, 1f, 1f), 0.075f);
+        });
         UpdateTxtUI();
     }
     private void OnClickReplayButton()
@@ -142,10 +138,8 @@ public class UIManager : Singleton<UIManager>
     }
     private void OnClickPlayButton()
     {
-        //AudioManager.Instance.SetSound(AudioManager.SoundType.ButtonClick);
         Observer.Noti(constr.CHANGE_CAMERA_PLAY);
-        SetUIScene(SceneUIType.GamePlay);
-        tutorialUI.SetActive(true);
+        HomeUI.Instance.CloseHomeUITo(SceneUIType.GamePlay);
         UpdateProcess();
     }
     private async void SetWinLevel()

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class UnitBroken : MonoBehaviour
 {
-
+    Vector3 vectorZero = new Vector3(0.005f, 0.005f, 0.005f);
     void Start()
     {
         Invoke(nameof(ScaleDown), Random.Range(1f, 1.5f));
@@ -15,7 +15,7 @@ public class UnitBroken : MonoBehaviour
     }
     private void ScaleDown()
     {
-        transform.DOScale(Vector3.zero, 3f).SetEase(Ease.OutSine).OnComplete(() =>
+        transform.DOScale(vectorZero, 3f).SetEase(Ease.OutSine).OnComplete(() =>
         {
             gameObject.SetActive(false);
         });
