@@ -21972,7 +21972,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5ff32e808cc28ba4da83c57211b27ced, type: 2}
+  - {fileID: 2100000, guid: d2cdc40e1dc8fc24bad2ccc5f2676186, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -45740,7 +45740,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3381544127519562583}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -45835,10 +45835,12 @@ MonoBehaviour:
   Hammer: {fileID: 1101199837352236469}
   inputEnemy: {fileID: 510546976356348949}
   weaponController: {fileID: 3741732317397559814}
+  skinController: {fileID: 0}
   floatingJoystick: {fileID: 0}
   dustrail: {fileID: 8073260021498731412}
   LookDir: {fileID: 5068072807098024938}
   impulseSource: {fileID: 4208637323164886684}
+  siuuuu: {fileID: 0}
 --- !u!114 &4208637323164886684
 MonoBehaviour:
   m_ObjectHideFlags: 0
