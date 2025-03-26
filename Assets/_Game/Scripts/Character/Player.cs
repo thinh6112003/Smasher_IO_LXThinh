@@ -1,4 +1,4 @@
-using Cinemachine;
+﻿using Cinemachine;
 using UnityEngine;
 using DG.Tweening;
 using System.Threading.Tasks;
@@ -124,46 +124,61 @@ public class Player : Character
 }
 public static class constr
 {
-    public static readonly string WIN = "Win";
+    public static readonly string PLAYER = "Player";
     public static readonly string PLAYERPREFKEY = "Playerpref Key";
+
+    // Trạng thái nhân vật
     public static readonly string CHARACTER = "Character";
-    public static readonly string WEAPON = "Weapon";
-    public static readonly string TOIDLE = "ToIdle";
     public static readonly string IDLE = "Idle";
     public static readonly string RUN = "Run";
     public static readonly string RUN_IDLE = "Run_idle";
-    public static readonly string DIE = "Die";
-    public static readonly string DIEMACE = "DieMace";
-    public static readonly string ATTACKHAMMER = "AttackHammer";
+    public static readonly string TOIDLE = "ToIdle";
     public static readonly string MOVEBASE = "MoveBase";
+    public static readonly string DEADZONE = "Deadzone";
+
+    // Hành động nhân vật
     public static readonly string ATTACK = "Attack";
     public static readonly string ATTACKMACE = "AttackMace";
+    public static readonly string ATTACKHAMMER = "AttackHammer";
     public static readonly string ATTACKAXE = "AttackAxe";
+    public static readonly string DIE = "Die";
+    public static readonly string DIEMACE = "DieMace";
     public static readonly string BROCKEN = "Brocken";
-    public static readonly string DEADZONE = "Deadzone";
-    public static readonly string ANMUNG = "Anmung";
-    public static readonly string PLAYER = "Player";
+
+    // Cài đặt camera
     public static readonly string CHANGE_CAMERA_PLAY = "Change Camera Play";
     public static readonly string CHANGE_CAMERA_LOBY_END = "Change Camera Loby End";
     public static readonly string DONECHANGECAM = "Done Change Cam";
-    public static readonly string LEVELUP = "Level Up";
-    public static readonly string DECOR = "Decor";
-    public static readonly string CHANGESOUNDSTATUS = "ChangeSoundStatus";
-    public static readonly string CHANGEVIBRATIONSTATUS = "ChangeVibrationStatus";
-    public static readonly string UPDATEUI= "UpdateUI";
-    public static readonly string DONELOADLEVEL= "done_load_level";
-    public static readonly string RELOADLEVEL = "ReloadLevel";
-    public static readonly string LOADSCENE= "Load";
-    public static readonly string HOMESCENE= "Home";
-    public static readonly string DONELOADSCENEASYNC= "DoneLoadSceneAsync";
-    public static readonly string CHANGECAMFOLLOWRUN= "ChangeCamFollowRun";
+    public static readonly string CHANGECAMFOLLOWRUN = "ChangeCamFollowRun";
 
+    // Trạng thái game
+    public static readonly string WIN = "Win";
     public static readonly string WINGAME = "WinGame";
-    public static readonly string NEXTLEVEL= "NextLevel";
-    public static readonly string ONEMOREKILL= "OneMoreKill";
-    public static readonly string LOSEGAME= "LoseGame";
+    public static readonly string LOSEGAME = "LoseGame";
+    public static readonly string NEXTLEVEL = "NextLevel";
+    public static readonly string LEVELUP = "Level Up";
+    public static readonly string ONEMOREKILL = "OneMoreKill";
+
+    // Quản lý scene
+    public static readonly string LOADSCENE = "Load";
+    public static readonly string HOMESCENE = "Home";
+    public static readonly string DONELOADLEVEL = "done_load_level";
+    public static readonly string RELOADLEVEL = "ReloadLevel";
+    public static readonly string DONELOADSCENEASYNC = "DoneLoadSceneAsync";
+
+    // Tùy chỉnh và cài đặt
     public static readonly string CHANGESKIN = "Change Skin";
     public static readonly string CHANGEWEAPON = "Change Weapon";
+    public static readonly string CHANGESOUNDSTATUS = "ChangeSoundStatus";
+    public static readonly string CHANGEVIBRATIONSTATUS = "ChangeVibrationStatus";
+    public static readonly string UPDATEUI = "UpdateUI";
+
+    // Cửa hàng
     public static readonly string GETSHOPDATA = "Get Shop Data";
     public static readonly string SETSHOPDATA = "Set Shop Data";
+
+    // Khác
+    public static readonly string DECOR = "Decor";
+    public static readonly string ANMUNG = "Anmung";
+
 }

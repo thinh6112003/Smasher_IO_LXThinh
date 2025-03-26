@@ -24,7 +24,7 @@ public class FrustumCullingExample : MonoBehaviour
         else
         {
             // Nếu không nằm trong frustum, tắt render
-            GetComponent<Renderer>().enabled = false;
+            GetComponent<Renderer>().enabled = true ;
         }
     }
 
